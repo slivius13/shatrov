@@ -1,0 +1,2750 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсы сварки от Евгения Шатрова — Официальная Академия</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,700;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            950: '#07090D',
+                            900: '#0B0E14',
+                            800: '#121721',
+                            700: '#19202E',
+                            600: '#252F42'
+                        },
+                        weld: {
+                            400: '#FF9838',
+                            500: '#FF7A00',
+                            600: '#EE6B00',
+                            700: '#CC5200'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0B0E14;
+            color: #F1F5F9;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Glow and Industrial Effects */
+        .weld-btn-gradient {
+            background: linear-gradient(180deg, #FF8C1A 0%, #E66000 100%);
+            box-shadow: 0 4px 20px rgba(255, 122, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+            transition: all 0.2s ease;
+        }
+        .weld-btn-gradient:hover {
+            background: linear-gradient(180deg, #FF9B33 0%, #F56B00 100%);
+            box-shadow: 0 6px 28px rgba(255, 122, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+            transform: translateY(-1px);
+        }
+        .weld-btn-gradient:active {
+            transform: translateY(1px) scale(0.99);
+            box-shadow: 0 2px 12px rgba(255, 122, 0, 0.4);
+        }
+
+        .weld-outline-btn {
+            border: 1.5px solid #FF7A00;
+            color: #FF8C1A;
+            background: rgba(255, 122, 0, 0.05);
+            transition: all 0.2s ease;
+        }
+        .weld-outline-btn:hover {
+            background: rgba(255, 122, 0, 0.16);
+            box-shadow: 0 0 16px rgba(255, 122, 0, 0.3);
+            color: #FFFFFF;
+        }
+        .weld-outline-btn:active {
+            transform: scale(0.98);
+        }
+
+        .card-metal {
+            background: linear-gradient(180deg, #151B26 0%, #0F131C 100%);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .cta-glow-box {
+            background: radial-gradient(circle at 80% 50%, rgba(238, 107, 0, 0.24) 0%, rgba(21, 27, 38, 0.95) 70%);
+            border: 1.5px solid #FF7A00;
+            box-shadow: 0 0 35px rgba(255, 122, 0, 0.15);
+        }
+
+        /* Digital 7-segment style LED display for Welder Simulator */
+        .led-display {
+            background: #090505;
+            border: 2px solid #2A1810;
+            box-shadow: inset 0 0 14px rgba(255, 50, 0, 0.35);
+            color: #FF3B1F;
+            text-shadow: 0 0 10px rgba(255, 59, 31, 0.85);
+            font-family: 'Courier New', monospace;
+        }
+
+        /* Custom Scrollbar for Course Sidebar */
+        .course-scroll::-webkit-scrollbar {
+            width: 6px;
+        }
+        .course-scroll::-webkit-scrollbar-track {
+            background: #0B0E14;
+        }
+        .course-scroll::-webkit-scrollbar-thumb {
+            background: #252F42;
+            border-radius: 3px;
+        }
+        .course-scroll::-webkit-scrollbar-thumb:hover {
+            background: #FF7A00;
+        }
+
+        /* Crop utilities for using the composite mockup if loaded directly */
+        .crop-hero-portrait {
+            object-fit: cover;
+            object-position: 68% 12%;
+        }
+        .crop-about-portrait {
+            object-fit: cover;
+            object-position: 20% 44%;
+        }
+
+        /* Custom Range Input */
+        input[type=range] {
+            accent-color: #FF7A00;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-weld-500 selection:text-white">
+
+    <!-- ================= HEADER ================= -->
+    <header class="sticky top-0 z-50 bg-dark-950/95 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+            <!-- Logo -->
+            <a href="#hero" class="flex items-center gap-3 group shrink-0">
+                <div class="w-10 h-10 rounded-lg bg-dark-800 border border-white/15 flex items-center justify-center group-hover:border-weld-500 transition-colors">
+                    <svg class="w-6 h-6 text-white group-hover:text-weld-400 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3C7.5 3 5 5.5 5 10v5c0 3.5 3 6 7 6s7-2.5 7-6v-5c0-4.5-2.5-7-7-7z"/>
+                        <rect x="7.5" y="8.5" width="9" height="4.5" rx="1" fill="#FF7A00" fill-opacity="0.25" stroke="#FF7A00" stroke-width="1.6"/>
+                        <path stroke-linecap="round" d="M9 16.5h6M10 19h4"/>
+                    </svg>
+                </div>
+                <div class="leading-tight">
+                    <span class="block text-white font-bold text-sm sm:text-base tracking-tight">Курсы сварки</span>
+                    <span class="block text-slate-300 font-semibold text-xs sm:text-sm">от Евгения Шатрова</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links (All working smooth scroll links) -->
+            <nav class="hidden xl:flex items-center gap-5 text-xs lg:text-sm font-medium text-slate-300">
+                <a href="#hero" class="text-white hover:text-weld-400 transition-colors">Главная</a>
+                <a href="#about" class="hover:text-weld-400 transition-colors">Об авторе</a>
+                <a href="#simulator" class="text-weld-400 font-semibold hover:text-weld-300 transition-colors flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-weld-500 animate-ping"></span>
+                    2D-Тренажёр дуги
+                </a>
+                <a href="#free-course" class="hover:text-weld-400 transition-colors">Бесплатный курс (14 уроков)</a>
+                <a href="#calculator" class="hover:text-weld-400 transition-colors">Калькулятор</a>
+                <a href="#courses" class="hover:text-weld-400 transition-colors">Курсы</a>
+                <a href="#exam" class="hover:text-weld-400 transition-colors">Сертификат</a>
+                <a href="#reviews" class="hover:text-weld-400 transition-colors">Отзывы</a>
+            </nav>
+
+            <!-- Right Controls: Dead-end Personal Cabinet Button + Mobile Menu Toggle -->
+            <div class="flex items-center gap-2.5">
+                <!-- Кнопка Личный кабинет: нажимается визуально, но никуда не ведет -->
+                <a href="javascript:void(0)" onclick="return false;" class="weld-outline-btn px-3.5 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold flex items-center gap-2 cursor-pointer select-none">
+                    <svg class="w-4 h-4 text-weld-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                    </svg>
+                    <span>Личный кабинет</span>
+                </a>
+
+                <button type="button" onclick="toggleMobileMenu()" class="xl:hidden p-2 rounded-lg bg-dark-800 border border-white/10 text-slate-200 hover:text-weld-400" aria-label="Меню">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobileMenu" class="hidden xl:hidden bg-dark-900 border-b border-white/10 px-4 pt-2 pb-4 space-y-2 text-sm">
+            <a href="#hero" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-lg hover:bg-white/5 text-white">Главная</a>
+            <a href="#about" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-lg hover:bg-white/5 text-slate-200">Об авторе и Архив рекордов</a>
+            <a href="#simulator" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-lg bg-weld-500/10 text-weld-400 font-semibold">⚡ Интерактивный 2D-Тренажёр дуги</a>
+            <a href="#free-course" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-lg hover:bg-white/5 text-slate-200">Бесплатный курс (14 уроков)</a>
+            <a href="#calculator" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-lg hover:bg-white/5 text-slate-200">Калькулятор режимов сварки</a>
+            <a href="#courses" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-lg hover:bg-white/5 text-slate-200">Наши курсы и тарифы</a>
+            <a href="#exam" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-lg hover:bg-white/5 text-slate-200">Экзамен и выдача сертификата</a>
+            <a href="#reviews" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-lg hover:bg-white/5 text-slate-200">Отзывы учеников</a>
+        </div>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="hero" class="relative overflow-hidden border-b border-weld-500/30">
+        <!-- Background Layer with Workshop & Sparks -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1920&q=85" 
+                 alt="Сварочный цех" 
+                 class="w-full h-full object-cover object-center opacity-30 filter contrast-125">
+            <div class="absolute inset-0 bg-gradient-to-r from-dark-950 via-dark-900/90 to-dark-900/40"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-dark-950/80"></div>
+            <canvas id="sparksCanvas" class="absolute inset-0 w-full h-full pointer-events-none opacity-85"></canvas>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-14 lg:py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- Left Column: Typography & Working CTA Buttons -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-weld-500/10 border border-weld-500/30 text-weld-400 text-xs font-semibold tracking-wide uppercase">
+                        <span class="w-2 h-2 rounded-full bg-weld-500"></span>
+                        <span>Лицензия Международной Ассоциации Титанового Шва №001</span>
+                    </div>
+
+                    <h1 class="font-display font-black italic uppercase tracking-tight leading-none text-3xl sm:text-5xl lg:text-[54px]">
+                        <span class="block text-white drop-shadow-md">КУРСЫ СВАРКИ</span>
+                        <span class="block mt-1.5">
+                            <span class="text-white">ОТ </span>
+                            <span class="text-weld-500 drop-shadow-[0_0_25px_rgba(255,122,0,0.45)]">ЕВГЕНИЯ ШАТРОВА</span>
+                        </span>
+                    </h1>
+
+                    <p class="text-slate-200 text-base sm:text-lg max-w-xl font-normal leading-relaxed">
+                        Полное обучение сварочному делу: от первых швов до профессионального уровня, герметизации атомных ледоколов и молекулярного сплавления титана.
+                    </p>
+
+                    <!-- 3 Feature Badges from Mockup -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 max-w-xl">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-weld-500/10 border border-weld-500/30 flex items-center justify-center shrink-0 text-weld-500">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                                </svg>
+                            </div>
+                            <span class="text-xs sm:text-sm text-slate-200 font-medium leading-snug">Практика<br>с первого урока</span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-weld-500/10 border border-weld-500/30 flex items-center justify-center shrink-0 text-weld-500">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 12.078 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <span class="text-xs sm:text-sm text-slate-200 font-medium leading-snug">Современное<br>оборудование</span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-weld-500/10 border border-weld-500/30 flex items-center justify-center shrink-0 text-weld-500">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                </svg>
+                            </div>
+                            <span class="text-xs sm:text-sm text-slate-200 font-medium leading-snug">Сертификат<br>об окончании</span>
+                        </div>
+                    </div>
+
+                    <!-- Working Navigation CTA Buttons -->
+                    <div class="pt-3 flex flex-wrap items-center gap-3.5">
+                        <button type="button" onclick="scrollToSection('courses')" class="weld-btn-gradient px-8 py-4 rounded-xl text-white font-bold text-base inline-flex items-center gap-3 cursor-pointer">
+                            <span>Выбрать курс</span>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                            </svg>
+                        </button>
+                        <button type="button" onclick="scrollToSection('free-course')" class="px-5 py-4 rounded-xl bg-dark-800/90 hover:bg-dark-700 text-slate-100 border border-white/15 font-semibold text-sm sm:text-base transition-colors inline-flex items-center gap-2 cursor-pointer">
+                            <span>Бесплатный курс (14 уроков)</span>
+                        </button>
+                        <button type="button" onclick="scrollToSection('simulator')" class="px-4 py-4 rounded-xl bg-weld-500/10 hover:bg-weld-500/20 text-weld-400 border border-weld-500/30 font-semibold text-sm transition-colors inline-flex items-center gap-2 cursor-pointer">
+                            <span>⚡ Запустить тренажёр дуги</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Column: Portrait of Evgeny Shatrov -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none rounded-2xl overflow-hidden border border-weld-500/40 bg-dark-800 shadow-[0_0_50px_rgba(255,122,0,0.2)] group">
+                        <div class="aspect-[4/4.3] w-full relative overflow-hidden bg-dark-900">
+                            <img id="heroPortraitImg"
+                                 src="1000015352.png" 
+                                 onerror="this.onerror=null; this.classList.remove('crop-hero-portrait'); this.src='1000015145.jpg';"
+                                 alt="Евгений Шатров — Мастер сварки" 
+                                 class="w-full h-full crop-hero-portrait transition-transform duration-700 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-transparent to-transparent opacity-80"></div>
+                        </div>
+
+                        <!-- Caption Badge inside Portrait -->
+                        <div class="absolute bottom-3 left-3 right-3 p-3.5 rounded-xl bg-dark-950/90 backdrop-blur-md border border-white/10 flex items-center justify-between gap-2">
+                            <div>
+                                <div class="text-xs font-bold uppercase tracking-wider text-weld-400">Евгений Шатров</div>
+                                <div class="text-xs text-slate-300">Единственный обладатель 14-го разряда НАКС</div>
+                            </div>
+                            <label class="cursor-pointer px-2.5 py-1.5 rounded-lg bg-weld-500/20 hover:bg-weld-500 text-weld-300 hover:text-white border border-weld-500/40 text-[11px] font-semibold transition-colors shrink-0">
+                                Загрузить фото
+                                <input type="file" accept="image/*" class="hidden" onchange="previewCustomImage(event, 'heroPortraitImg', true)">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT THE AUTHOR + INTERACTIVE TABS ================= -->
+    <section id="about" class="py-14 lg:py-20 bg-dark-900 relative border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+            
+            <!-- Top Row Matching Mockup -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- Left Image: Evgeny in Workshop with KEAP Welder -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-2xl overflow-hidden border border-white/15 bg-dark-800 shadow-2xl group">
+                        <div class="aspect-[16/11] w-full relative overflow-hidden">
+                            <img id="aboutWorkshopImg"
+                                 src="1000015352.png"
+                                 onerror="this.onerror=null; this.classList.remove('crop-about-portrait'); this.src='watermarked_img_13637638525439510510.jpg';"
+                                 alt="Евгений Шатров в сварочном цеху с аппаратом KEAP"
+                                 class="w-full h-full crop-about-portrait">
+                            <div class="absolute inset-0 bg-gradient-to-tr from-dark-950/60 via-transparent to-transparent"></div>
+                        </div>
+                        <div class="px-4 py-2.5 bg-dark-950/90 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+                            <span>Евгений Шатров у инвертора KEAP-Термояд</span>
+                            <label class="cursor-pointer text-weld-400 hover:underline font-medium">
+                                Заменить кадр
+                                <input type="file" accept="image/*" class="hidden" onchange="previewCustomImage(event, 'aboutWorkshopImg', true)">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Middle: Biography & Checkmarks -->
+                <div class="lg:col-span-4 space-y-4">
+                    <div>
+                        <h2 class="font-display font-extrabold uppercase text-xl sm:text-2xl text-white tracking-tight">ОБ АВТОРЕ</h2>
+                        <h3 class="font-display font-black uppercase text-2xl sm:text-3xl text-weld-500 tracking-tight mt-0.5">ЕВГЕНИЙ ШАТРОВ</h3>
+                    </div>
+
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Евгений Шатров — профессиональный сварщик с более чем 10-летним опытом. Начал путь в сварке в 14 лет, прошёл путь от ученика на небольшом производстве до главного сварщика крупных промышленных проектов и планетарных инфраструктурных объектов.
+                    </p>
+
+                    <ul class="space-y-2.5 pt-1 text-sm text-slate-200">
+                        <li class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-weld-500/20 border border-weld-500 flex items-center justify-center shrink-0 mt-0.5 text-weld-400 text-xs">✓</span>
+                            <span>Сварщик 6-го разряда (и пожизненного 14-го разряда ЮНЕСКО)</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-weld-500/20 border border-weld-500 flex items-center justify-center shrink-0 mt-0.5 text-weld-400 text-xs">✓</span>
+                            <span>Опыт работы на объектах по всей стране, под водой и в космосе</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-weld-500/20 border border-weld-500 flex items-center justify-center shrink-0 mt-0.5 text-weld-400 text-xs">✓</span>
+                            <span>Обучил более 5 000 учеников со 100% допуском по рентгену</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-weld-500/20 border border-weld-500 flex items-center justify-center shrink-0 mt-0.5 text-weld-400 text-xs">✓</span>
+                            <span>Автор собственной методики обучения сварке и молекулярного шва</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-weld-500/20 border border-weld-500 flex items-center justify-center shrink-0 mt-0.5 text-weld-400 text-xs">✓</span>
+                            <span>Принимал участие в строительстве мостов, металлоконструкций и промышленных объектов</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right: Stats Box from Mockup -->
+                <div class="lg:col-span-3">
+                    <div class="card-metal rounded-2xl p-6 space-y-5 border border-white/10">
+                        <div class="pb-4 border-b border-white/10">
+                            <div class="font-display font-black text-3xl sm:text-4xl text-weld-500">10+</div>
+                            <div class="text-xs sm:text-sm text-slate-300 mt-1">лет опыта</div>
+                        </div>
+                        <div class="pb-4 border-b border-white/10">
+                            <div class="font-display font-black text-3xl sm:text-4xl text-weld-500">5000+</div>
+                            <div class="text-xs sm:text-sm text-slate-300 mt-1">выпускников</div>
+                        </div>
+                        <div>
+                            <div class="font-display font-black text-3xl sm:text-4xl text-weld-500">50+</div>
+                            <div class="text-xs sm:text-sm text-slate-300 mt-1">реальных проектов</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Author Dossier Tabs -->
+            <div class="card-metal rounded-2xl border border-white/15 overflow-hidden">
+                <div class="flex flex-wrap border-b border-white/10 bg-dark-950/70 p-2 gap-2">
+                    <button type="button" onclick="switchAuthorTab('records')" id="tabBtn-records" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-weld-500 text-white shadow">
+                        1. Мировые рекорды и Архив (Фото)
+                    </button>
+                    <button type="button" onclick="switchAuthorTab('telemetry')" id="tabBtn-telemetry" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-300 hover:bg-white/5">
+                        2. Физиологические характеристики Мастера
+                    </button>
+                    <button type="button" onclick="switchAuthorTab('chronology')" id="tabBtn-chronology" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-300 hover:bg-white/5">
+                        3. Хронология легендарных объектов
+                    </button>
+                </div>
+
+                <!-- TAB 1: Archive Photos & World Records -->
+                <div id="tabContent-records" class="p-6 sm:p-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                        
+                        <!-- Card 1: The Suit + Globe Photo (1000015145.jpg) -->
+                        <div class="lg:col-span-5 bg-dark-950/90 rounded-2xl overflow-hidden flex flex-col justify-between border border-white/10">
+                            <div class="relative bg-dark-900 aspect-[3/3.4] w-full overflow-hidden">
+                                <img id="archiveSuitImg"
+                                     src="1000015145.jpg"
+                                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=80';"
+                                     alt="Евгений Шатров в темно-синем костюме у глобуса"
+                                     class="w-full h-full object-cover object-top">
+                                <div class="absolute top-3 left-3 px-3 py-1 rounded-md bg-dark-950/90 border border-weld-500/40 text-[11px] font-bold text-weld-400 uppercase tracking-wider">
+                                    Архив Академии • Доклад у глобуса
+                                </div>
+                                <label class="absolute top-3 right-3 cursor-pointer px-2.5 py-1 rounded-md bg-dark-950/90 hover:bg-weld-500 text-white text-[11px] border border-white/15 transition-colors">
+                                    Загрузить фото (костюм)
+                                    <input type="file" accept="image/*" class="hidden" onchange="previewCustomImage(event, 'archiveSuitImg', false)">
+                                </label>
+                            </div>
+                            <div class="p-5 space-y-2.5">
+                                <div class="text-xs font-semibold text-weld-400 uppercase tracking-wider">Научный симпозиум по геотектонической сварке</div>
+                                <h4 class="text-base sm:text-lg font-bold text-white leading-snug">
+                                    Защита диссертации: «Сварка литосферных плит и Марианской впадины в нижнем положении»
+                                </h4>
+                                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                                    На документальном снимке — Евгений Шатров в классическом темно-синем костюме и синей рубашке перед государственной комиссией. На глобусе справа он отметил маркером 18 тектонических разломов планеты, которые лично стянул электродом УОНИ-13/55 с притуплением кромки 2 мм. Позади на белом стенде — цветные отпечатки ладоней академиков, которые пытались пожать руку Евгению сразу после сдачи норматива.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Welding Machine Photo (watermarked_img_13637638525439510510.jpg) + 4 Feats -->
+                        <div class="lg:col-span-7 flex flex-col gap-5">
+                            <div class="bg-dark-950/90 rounded-2xl overflow-hidden border border-white/10 grid grid-cols-1 md:grid-cols-12">
+                                <div class="md:col-span-6 relative min-h-[220px] bg-dark-900">
+                                    <img id="welderMachineImg"
+                                         src="watermarked_img_13637638525439510510.jpg"
+                                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80';"
+                                         alt="Сварочный аппарат Евгения Шатрова 140А 18.5В"
+                                         class="w-full h-full object-cover">
+                                    <div class="absolute bottom-2 left-2 px-2.5 py-1 rounded bg-dark-950/90 border border-weld-500/40 text-[11px] font-mono text-weld-400">
+                                        ТАБЛО: 140 A | 18.5 V
+                                    </div>
+                                    <label class="absolute top-2 right-2 cursor-pointer px-2 py-1 rounded bg-dark-950/85 hover:bg-weld-500 text-white text-[10px] border border-white/15">
+                                        Сменить фото
+                                        <input type="file" accept="image/*" class="hidden" onchange="previewCustomImage(event, 'welderMachineImg', false)">
+                                    </label>
+                                </div>
+                                <div class="md:col-span-6 p-5 flex flex-col justify-center space-y-2.5">
+                                    <div class="text-xs font-bold text-weld-500 uppercase">Именной агрегат Мастера</div>
+                                    <h4 class="text-base sm:text-lg font-bold text-white">Инвертор «ШАТРОВ-9000 ТЕРМОЯД»</h4>
+                                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                                        На цифровом индикаторе аппарата навечно застыли эталонные значения <strong class="text-white">140 Ампер и 18.5 Вольт</strong>. На этом режиме Евгений без перенастройки варит как фольгу от шоколадки «Алёнка», так и бронеплиту толщиной 120 мм. Аппарат не требует подключения к розетке 380В — питается напрямую от статического заряда взгляда Шатрова.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1">
+                                <div class="p-4 rounded-xl bg-dark-950/80 border border-white/10 border-l-4 border-l-weld-500 space-y-1.5">
+                                    <div class="text-xs font-bold text-weld-400 uppercase">Феномен 2016 года</div>
+                                    <h5 class="text-sm font-bold text-white">Сварка чугуна со стеклом и дубом</h5>
+                                    <p class="text-xs text-slate-300 leading-relaxed">
+                                        Соединил чугунный картер, кварцевое стекло и дубовый брус одним проходом. При испытании давлением 400 атмосфер лопнула стальная колба стенда, а шов остался герметичным.
+                                    </p>
+                                </div>
+                                <div class="p-4 rounded-xl bg-dark-950/80 border border-white/10 border-l-4 border-l-weld-500 space-y-1.5">
+                                    <div class="text-xs font-bold text-weld-400 uppercase">Рекорд 2019 года</div>
+                                    <h5 class="text-sm font-bold text-white">Дуга трением двух стальных ломов</h5>
+                                    <p class="text-xs text-slate-300 leading-relaxed">
+                                        Когда на заводе на 72 часа отключили подстанцию, Евгений выполнил квартальный план, высекая стабильную дугу 250А трением двух ломов друг о друга.
+                                    </p>
+                                </div>
+                                <div class="p-4 rounded-xl bg-dark-950/80 border border-white/10 border-l-4 border-l-weld-500 space-y-1.5">
+                                    <div class="text-xs font-bold text-weld-400 uppercase">Северный полюс</div>
+                                    <h5 class="text-sm font-bold text-white">Ремонт атомного ледокола под водой</h5>
+                                    <p class="text-xs text-slate-300 leading-relaxed">
+                                        Нырнул в ледяную воду Карского моря с одним электродом УОНИ-13/55 и заварил 4-метровую пробоину в корпусе ледокола на задержке дыхания.
+                                    </p>
+                                </div>
+                                <div class="p-4 rounded-xl bg-dark-950/80 border border-white/10 border-l-4 border-l-weld-500 space-y-1.5">
+                                    <div class="text-xs font-bold text-weld-400 uppercase">Метрология</div>
+                                    <h5 class="text-sm font-bold text-white">Химсостав стали по запаху окалины</h5>
+                                    <p class="text-xs text-slate-300 leading-relaxed">
+                                        Определяет марку легированной стали и процент серы/фосфора по запаху первой искры с точностью до 0,0001% быстрее лабораторного спектрометра.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- TAB 2: Master Telemetry & Biometrics -->
+                <div id="tabContent-telemetry" class="hidden p-6 sm:p-8 space-y-6">
+                    <div class="max-w-3xl">
+                        <h4 class="text-lg font-bold text-white">Официальные биометрические замеры НИИ Сварки им. Патона</h4>
+                        <p class="text-xs sm:text-sm text-slate-300 mt-1">
+                            Показатели зафиксированы высокоточными датчиками во время контрольной заварки неповоротного стыка магистрального газопровода Ø 1420 мм.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="p-5 rounded-xl bg-dark-950 border border-white/10 space-y-2">
+                            <div class="flex justify-between text-xs sm:text-sm font-bold">
+                                <span class="text-white">Стабильность фиксации локтя («Железный краб»)</span>
+                                <span class="text-weld-400">100.0% (Абсолютный монолит)</span>
+                            </div>
+                            <div class="w-full h-3 bg-dark-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-weld-500 w-full"></div>
+                            </div>
+                            <p class="text-xs text-slate-400">Отклонение кончика электрода за 8 часов смены составило 0,000 мкм.</p>
+                        </div>
+
+                        <div class="p-5 rounded-xl bg-dark-950 border border-white/10 space-y-2">
+                            <div class="flex justify-between text-xs sm:text-sm font-bold">
+                                <span class="text-white">Природное затемнение прищура ресниц</span>
+                                <span class="text-weld-400">14 DIN (Защита от УФ 100%)</span>
+                            </div>
+                            <div class="w-full h-3 bg-dark-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-weld-500 w-full"></div>
+                            </div>
+                            <p class="text-xs text-slate-400">Сварочные «зайчики» при попадании в глаза Евгения сами слепнут и распадаются на фотоны.</p>
+                        </div>
+
+                        <div class="p-5 rounded-xl bg-dark-950 border border-white/10 space-y-2">
+                            <div class="flex justify-between text-xs sm:text-sm font-bold">
+                                <span class="text-white">Предварительный подогрев кромок взглядом</span>
+                                <span class="text-weld-400">1 240 °C за 3 секунды</span>
+                            </div>
+                            <div class="w-full h-3 bg-dark-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-weld-500 w-[96%]"></div>
+                            </div>
+                            <p class="text-xs text-slate-400">Позволяет варить высокоуглеродистые стали на морозе -65°C без газовых горелок.</p>
+                        </div>
+
+                        <div class="p-5 rounded-xl bg-dark-950 border border-white/10 space-y-2">
+                            <div class="flex justify-between text-xs sm:text-sm font-bold">
+                                <span class="text-white">Процент прохождения рентген-контроля (УЗК)</span>
+                                <span class="text-weld-400">146% (Шов крепче цельного проката)</span>
+                            </div>
+                            <div class="w-full h-3 bg-dark-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-weld-500 w-full"></div>
+                            </div>
+                            <p class="text-xs text-slate-400">Дефектоскописты используют снимки швов Шатрова для калибровки эталонных рентген-аппаратов.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 3: Chronology -->
+                <div id="tabContent-chronology" class="hidden p-6 sm:p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                        <div class="p-5 rounded-xl bg-dark-950 border border-white/10 space-y-2">
+                            <span class="px-2.5 py-1 rounded bg-weld-500/20 text-weld-400 font-mono text-xs font-bold">Возраст: 14 лет</span>
+                            <h5 class="text-sm font-bold text-white pt-1">Первый шов и защита у глобуса</h5>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Заварил треснувшую чугунную батарею в кабинете географии обычной алюминиевой вилкой. В тот же день защитил доклад у глобуса и получил 6-й разряд экстерном.
+                            </p>
+                        </div>
+                        <div class="p-5 rounded-xl bg-dark-950 border border-white/10 space-y-2">
+                            <span class="px-2.5 py-1 rounded bg-weld-500/20 text-weld-400 font-mono text-xs font-bold">2018 год</span>
+                            <h5 class="text-sm font-bold text-white pt-1">Создание метода «Чешуя Дракона»</h5>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Разработал технику ведения электрода, при которой шлак отлетает сам ещё в процессе горения дуги и аккуратно складывается в ведро в углу цеха.
+                            </p>
+                        </div>
+                        <div class="p-5 rounded-xl bg-dark-950 border border-white/10 space-y-2">
+                            <span class="px-2.5 py-1 rounded bg-weld-500/20 text-weld-400 font-mono text-xs font-bold">2021 год</span>
+                            <h5 class="text-sm font-bold text-white pt-1">Присвоение 14-го разряда</h5>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Специальным указом Всемирного Конгресса Металлургов тарифная сетка из 6 разрядов была расширена до 14-го исключительно для одного человека — Евгения Шатрова.
+                            </p>
+                        </div>
+                        <div class="p-5 rounded-xl bg-dark-950 border border-white/10 space-y-2">
+                            <span class="px-2.5 py-1 rounded bg-weld-500/20 text-weld-400 font-mono text-xs font-bold">Настоящее время</span>
+                            <h5 class="text-sm font-bold text-white pt-1">Основание Академии Сварки</h5>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Передает фундаментальные знания ученикам по всему миру. Более 5 000 выпускников уже варят трубы, мосты и космические корабли по заветам Мастера.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= 2D INTERACTIVE WELDING SIMULATOR («ТРЕНАЖЁР ДУГИ ШАТРОВ-9000») ================= -->
+    <section id="simulator" class="py-16 lg:py-24 bg-dark-950 border-b border-white/10 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-8 gap-4">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-weld-500/15 border border-weld-500/30 text-weld-400 text-xs font-bold uppercase tracking-wider mb-3">
+                        <span>Практика прямо в браузере • Интерактивный стенд</span>
+                    </div>
+                    <h2 class="font-display font-black uppercase text-2xl sm:text-4xl text-white tracking-tight">
+                        2D-ТРЕНАЖЁР ДУГИ <span class="text-weld-500">«ШАТРОВ-9000»</span>
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base mt-1">
+                        Настройте ток и напряжение (эталон Шатрова — <strong class="text-white">140 А / 18.5 В</strong>), зажмите левую кнопку мыши (или палец на экране) и проведите ровный шов вдоль стыка деталей!
+                    </p>
+                </div>
+
+                <!-- Mask & Slag Controls -->
+                <div class="flex flex-wrap items-center gap-3 shrink-0">
+                    <button type="button" id="maskToggleBtn" onclick="toggleWeldingMask()" class="px-4 py-2.5 rounded-xl bg-dark-800 hover:bg-dark-700 border border-white/15 text-xs sm:text-sm font-semibold text-slate-200 flex items-center gap-2 cursor-pointer">
+                        <span id="maskStatusDot" class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+                        <span id="maskStatusText">Маска Хамелеон: ВКЛ (13 DIN)</span>
+                    </button>
+                    <button type="button" onclick="chipSlagOnCanvas()" class="weld-outline-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold cursor-pointer">
+                        🔨 Отбить шлак молоточком
+                    </button>
+                    <button type="button" onclick="resetWeldCanvas()" class="px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs sm:text-sm font-semibold text-slate-300 cursor-pointer">
+                        Новая заготовка
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+                
+                <!-- Left Control Panel: Styled like the Red/Black Inverter from the Photo -->
+                <div class="lg:col-span-4 card-metal rounded-2xl p-6 border-2 border-red-900/40 flex flex-col justify-between space-y-5 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 left-0 h-1.5 bg-gradient-to-r from-red-700 via-weld-500 to-red-700"></div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                            <div>
+                                <div class="text-[11px] font-mono uppercase text-slate-400">Панель управления инвертором</div>
+                                <div class="font-display font-black text-base text-white tracking-wider">SHATROV-MASTER 140/18.5</div>
+                            </div>
+                            <button type="button" onclick="setShatrovPreset()" class="px-2.5 py-1 rounded bg-weld-500/20 hover:bg-weld-500 text-weld-400 hover:text-white border border-weld-500/40 text-[11px] font-bold transition-colors cursor-pointer">
+                                Эталон 140А/18.5В
+                            </button>
+                        </div>
+
+                        <!-- Dual Digital LED Displays (140 A | 18.5 V) -->
+                        <div class="grid grid-cols-2 gap-3 bg-dark-950 p-3.5 rounded-xl border border-white/10">
+                            <div>
+                                <div class="text-[10px] font-mono text-slate-400 uppercase mb-1">ТОК ДУГИ (АМПЕР)</div>
+                                <div id="simAmpDisplay" class="led-display rounded-lg py-2 px-3 text-center text-2xl sm:text-3xl font-black tracking-widest">
+                                    140
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-[10px] font-mono text-slate-400 uppercase mb-1">НАПРЯЖЕНИЕ (ВОЛЬТ)</div>
+                                <div id="simVoltDisplay" class="led-display rounded-lg py-2 px-3 text-center text-2xl sm:text-3xl font-black tracking-widest">
+                                    18.5
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sliders -->
+                        <div class="space-y-3 pt-1">
+                            <div>
+                                <div class="flex justify-between text-xs font-medium mb-1">
+                                    <span class="text-slate-300">Регулировка тока (I):</span>
+                                    <span id="simAmpLabel" class="text-weld-400 font-mono font-bold">140 А</span>
+                                </div>
+                                <input id="simAmpRange" type="range" min="30" max="350" step="5" value="140" oninput="updateSimControls()" class="w-full cursor-pointer">
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between text-xs font-medium mb-1">
+                                    <span class="text-slate-300">Напряжение дуги (U):</span>
+                                    <span id="simVoltLabel" class="text-weld-400 font-mono font-bold">18.5 В</span>
+                                </div>
+                                <input id="simVoltRange" type="range" min="12" max="32" step="0.5" value="18.5" oninput="updateSimControls()" class="w-full cursor-pointer">
+                            </div>
+                        </div>
+
+                        <!-- Electrode & Workpiece Selectors -->
+                        <div class="space-y-3 pt-1">
+                            <div>
+                                <label class="block text-xs text-slate-400 mb-1">Электрод / Присадка:</label>
+                                <select id="simElectrodeSelect" onchange="updateSimControls()" class="w-full bg-dark-950 border border-white/15 rounded-xl px-3 py-2 text-xs sm:text-sm text-white focus:border-weld-500 outline-none">
+                                    <option value="uoni">УОНИ-13/55 Ø 3.0 мм (Выбор Шатрова)</option>
+                                    <option value="mr3">МР-3С Синий Ø 4.0 мм (Рутиловый)</option>
+                                    <option value="tig">Вольфрам WL-20 + Аргон (Золотая чешуя)</option>
+                                    <option value="crowbar">Два стальных лома Ø 24 мм (Сварка трением)</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs text-slate-400 mb-1">Свариваемая деталь (Заготовка):</label>
+                                <select id="simMaterialSelect" onchange="resetWeldCanvas()" class="w-full bg-dark-950 border border-white/15 rounded-xl px-3 py-2 text-xs sm:text-sm text-white focus:border-weld-500 outline-none">
+                                    <option value="pipe" selected>Труба магистральная 12 мм (Оптимум: 110–170А)</option>
+                                    <option value="muffler">Гнилой глушитель ВАЗ 0.8 мм (Оптимум: 35–65А)</option>
+                                    <option value="icebreaker">Обшивка атомного ледокола 40 мм (Оптимум: 200–350А)</option>
+                                    <option value="castglass">Чугун + Оконное стекло + Дуб (Оптимум: строго 140А)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Verdict Box from Evgeny Shatrov -->
+                    <div class="p-4 rounded-xl bg-dark-950 border border-weld-500/30 space-y-1.5">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[11px] font-bold uppercase text-weld-400">Вердикт Евгения Шатрова:</span>
+                            <span id="simRankBadge" class="text-xs font-mono font-bold text-white bg-weld-500/20 px-2 py-0.5 rounded">Готов к дуге</span>
+                        </div>
+                        <p id="simVerdictText" class="text-xs text-slate-300 leading-relaxed">
+                            Зажмите кнопку мыши на серой разделке справа и ведите электрод слева направо по пунктирной линии стыка.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Interactive Welding Workbench Canvas -->
+                <div class="lg:col-span-8 card-metal rounded-2xl overflow-hidden border border-white/15 flex flex-col justify-between relative">
+                    <div class="px-5 py-3 bg-dark-950 border-b border-white/10 flex flex-wrap items-center justify-between gap-2 text-xs">
+                        <div class="flex items-center gap-4">
+                            <span class="text-slate-300 font-semibold">Рабочий стол: <strong id="simTableMaterialName" class="text-white">Труба магистральная 12 мм</strong></span>
+                            <span id="simSlagBadge" class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-mono">Шлак: не отбит</span>
+                        </div>
+                        <div class="flex items-center gap-4 font-mono">
+                            <span class="text-slate-400">Провар корня: <strong id="simPenetrationVal" class="text-weld-400">0%</strong></span>
+                            <span class="text-slate-400">Ровность руки: <strong id="simStraightnessVal" class="text-emerald-400">—</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Canvas Container -->
+                    <div class="relative flex-1 min-h-[340px] sm:min-h-[400px] bg-dark-950 select-none">
+                        <canvas id="weldWorkbenchCanvas" class="w-full h-full block cursor-crosshair touch-none"></canvas>
+                        
+                        <!-- Unmasked Flash Warning Overlay when welding without Chameleon mask -->
+                        <div id="unmaskedFlashOverlay" class="pointer-events-none absolute inset-0 bg-white opacity-0 transition-opacity duration-75"></div>
+                    </div>
+
+                    <div class="px-5 py-3 bg-dark-950 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-400">
+                        <span>💡 Совет Мастера: После прохода шва нажмите кнопку <strong>«Отбить шлак молоточком»</strong>, чтобы увидеть золотую чешую.</span>
+                        <span id="simCoordStatus" class="font-mono text-slate-500">Длина дуги: 1.73 мм</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FREE INTERACTIVE COURSE (14 LESSONS + QUIZ IN EACH LESSON) ================= -->
+    <section id="free-course" class="py-16 lg:py-24 bg-dark-900 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-10 gap-4">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-weld-500/15 border border-weld-500/30 text-weld-400 text-xs font-bold uppercase tracking-wider mb-3">
+                        <span>Открытый образовательный модуль • 14 иллюстрированных уроков</span>
+                    </div>
+                    <h2 class="font-display font-black uppercase text-2xl sm:text-4xl text-white tracking-tight">
+                        БЕСПЛАТНЫЙ КУРС: <span class="text-weld-500">14 УРОКОВ ЕВГЕНИЯ ШАТРОВА</span>
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base mt-2">
+                        Полная текстовая база с фотографиями, режимами тока, «Секретом Шатрова» и контрольным вопросом в каждом уроке.
+                    </p>
+                </div>
+
+                <!-- Progress Counter -->
+                <div class="card-metal px-5 py-3.5 rounded-xl border border-white/10 flex items-center gap-4 shrink-0">
+                    <div>
+                        <div class="text-xs text-slate-400">Пройдено уроков курса</div>
+                        <div id="courseProgressText" class="text-sm font-bold text-white mt-0.5">Изучено: 1 из 14 (7%)</div>
+                    </div>
+                    <div class="w-28 h-2.5 bg-dark-950 rounded-full overflow-hidden border border-white/10">
+                        <div id="courseProgressBar" class="h-full bg-weld-500 transition-all duration-300" style="width: 7%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Reader Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                
+                <!-- Left Sidebar: 14 Lessons List -->
+                <div class="lg:col-span-4 card-metal rounded-2xl p-3 border border-white/10">
+                    <div class="px-3 py-2.5 border-b border-white/10 flex items-center justify-between">
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-300">Оглавление (14 уроков)</span>
+                        <button type="button" onclick="markAllLessonsDone()" class="text-[11px] font-semibold text-weld-400 hover:underline cursor-pointer">Отметить все</button>
+                    </div>
+                    <div id="lessonListContainer" class="mt-2 space-y-1.5 max-h-[620px] overflow-y-auto course-scroll pr-1">
+                        <!-- Dynamically populated by JS -->
+                    </div>
+                </div>
+
+                <!-- Right Main Content: Active Lesson Viewer -->
+                <div class="lg:col-span-8 card-metal rounded-2xl overflow-hidden border border-white/15">
+                    
+                    <!-- Lesson Image Banner -->
+                    <div class="relative h-64 sm:h-80 w-full bg-dark-950 overflow-hidden">
+                        <img id="activeLessonImg" 
+                             src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1000&q=80" 
+                             alt="Иллюстрация к уроку" 
+                             class="w-full h-full object-cover transition-all duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-dark-900/30 to-transparent"></div>
+                        
+                        <div class="absolute top-4 left-4 right-4 flex flex-wrap items-center justify-between gap-2">
+                            <div class="flex items-center gap-2">
+                                <span id="activeLessonBadge" class="px-3 py-1 rounded-lg bg-weld-500 text-white font-bold text-xs uppercase tracking-wider shadow-lg">
+                                    Урок №1 из 14
+                                </span>
+                                <span id="activeLessonParams" class="px-3 py-1 rounded-lg bg-dark-950/90 border border-white/15 text-slate-200 font-mono text-xs">
+                                    Ток: 110–140А | Дуга: 1.7 мм
+                                </span>
+                            </div>
+                            <button type="button" id="markLessonDoneBtn" onclick="toggleCurrentLessonCompleted()" class="px-3 py-1 rounded-lg bg-dark-950/90 hover:bg-emerald-600/30 border border-white/20 text-xs font-semibold text-slate-200 transition-colors cursor-pointer">
+                                ✓ Отметить пройденным
+                            </button>
+                        </div>
+
+                        <div class="absolute bottom-4 left-6 right-6">
+                            <h3 id="activeLessonTitle" class="font-display font-black text-xl sm:text-2xl lg:text-3xl text-white drop-shadow">
+                                Урок 1. Философия Дуги: Почему металл боится Евгения Шатрова
+                            </h3>
+                        </div>
+                    </div>
+
+                    <!-- Lesson Body Content -->
+                    <div class="p-6 sm:p-8 space-y-6">
+                        
+                        <!-- Technical Theory Text -->
+                        <div class="space-y-4">
+                            <div class="text-xs font-bold uppercase tracking-wider text-weld-400">Теоретическая и практическая часть</div>
+                            <div id="activeLessonText" class="text-slate-200 text-sm sm:text-base leading-relaxed space-y-3">
+                                <!-- Populated by JS -->
+                            </div>
+                        </div>
+
+                        <!-- Technical Diagram / Parameters Strip -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+                            <div class="p-3.5 rounded-xl bg-dark-950/80 border border-white/10">
+                                <div class="text-[11px] text-slate-400 uppercase">Рекомендуемый электрод</div>
+                                <div id="activeLessonElectrode" class="text-sm font-bold text-white mt-0.5">УОНИ-13/55 (Ø 3.0 мм)</div>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-dark-950/80 border border-white/10">
+                                <div class="text-[11px] text-slate-400 uppercase">Положение в пространстве</div>
+                                <div id="activeLessonPosition" class="text-sm font-bold text-white mt-0.5">Нижнее / Пространственное</div>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-dark-950/80 border border-white/10">
+                                <div class="text-[11px] text-slate-400 uppercase">Контроль качества</div>
+                                <div id="activeLessonControl" class="text-sm font-bold text-weld-400 mt-0.5">УЗК + Рентген 100%</div>
+                            </div>
+                        </div>
+
+                        <!-- "Секрет Шатрова" Exclusive Callout -->
+                        <div class="p-5 rounded-xl bg-gradient-to-r from-weld-500/15 via-weld-500/10 to-transparent border-l-4 border-l-weld-500 border border-weld-500/30 space-y-1.5">
+                            <div class="flex items-center gap-2 text-weld-400 font-bold text-xs uppercase tracking-wider">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Личный секрет Евгения Шатрова</span>
+                            </div>
+                            <p id="activeLessonSecret" class="text-sm sm:text-base text-white font-medium italic leading-relaxed">
+                                <!-- Populated by JS -->
+                            </p>
+                        </div>
+
+                        <!-- Interactive Mini-Quiz for Current Lesson -->
+                        <div class="p-5 rounded-xl bg-dark-950 border border-white/10 space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Проверка усвоения урока:</span>
+                                <span id="lessonQuizStatus" class="text-xs font-semibold text-weld-400">Выберите правильный ответ</span>
+                            </div>
+                            <p id="lessonQuizQuestion" class="text-sm font-bold text-white"></p>
+                            <div id="lessonQuizOptions" class="grid grid-cols-1 gap-2 pt-1">
+                                <!-- Populated by JS -->
+                            </div>
+                            <p id="lessonQuizFeedback" class="hidden text-xs pt-1 font-medium"></p>
+                        </div>
+
+                        <!-- Lesson Navigation Footer -->
+                        <div class="pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
+                            <button type="button" id="prevLessonBtn" onclick="changeLesson(-1)" class="px-5 py-2.5 rounded-xl bg-dark-800 hover:bg-dark-700 text-slate-200 border border-white/10 text-sm font-semibold transition-colors flex items-center gap-2 disabled:opacity-40 disabled:pointer-events-none cursor-pointer">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+                                </svg>
+                                <span>Предыдущий урок</span>
+                            </button>
+
+                            <span id="lessonFooterStatus" class="text-xs text-slate-400 font-mono">Модуль 1 / 14</span>
+
+                            <button type="button" id="nextLessonBtn" onclick="changeLesson(1)" class="weld-btn-gradient px-6 py-2.5 rounded-xl text-white text-sm font-bold flex items-center gap-2 cursor-pointer">
+                                <span>Следующий урок</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= INTERACTIVE WELDING CALCULATOR ================= -->
+    <section id="calculator" class="py-16 lg:py-20 bg-dark-950 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-10">
+                <div class="text-weld-500 text-xs font-bold uppercase tracking-widest mb-2">Инженерный инструментарий Академии</div>
+                <h2 class="font-display font-black uppercase text-2xl sm:text-4xl text-white tracking-tight">
+                    КАЛЬКУЛЯТОР СВАРОЧНЫХ РЕЖИМОВ <span class="text-weld-500">ПО ФОРМУЛЕ ШАТРОВА</span>
+                </h2>
+                <p class="text-slate-300 text-sm sm:text-base mt-1">
+                    Укажите толщину свариваемого металла и протяженность стыка для мгновенного расчета диаметра электрода, силы тока и норматива времени.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                <!-- Inputs -->
+                <div class="lg:col-span-6 card-metal rounded-2xl p-6 sm:p-8 border border-white/15 space-y-6">
+                    <div>
+                        <div class="flex justify-between text-sm font-semibold mb-2">
+                            <span class="text-slate-200">Толщина металла (S):</span>
+                            <span id="calcThicknessLabel" class="text-weld-400 font-mono font-bold">8 мм</span>
+                        </div>
+                        <input id="calcThickness" type="range" min="1" max="40" step="1" value="8" oninput="runWeldCalculator()" class="w-full cursor-pointer">
+                        <div class="flex justify-between text-[11px] text-slate-500 mt-1">
+                            <span>1 мм (Кузов)</span>
+                            <span>10 мм (Швеллер)</span>
+                            <span>20 мм (Мост)</span>
+                            <span>40 мм (Ледокол)</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-sm font-semibold mb-2">
+                            <span class="text-slate-200">Длина сварного шва (L):</span>
+                            <span id="calcLengthLabel" class="text-weld-400 font-mono font-bold">12 м</span>
+                        </div>
+                        <input id="calcLength" type="range" min="1" max="100" step="1" value="12" oninput="runWeldCalculator()" class="w-full cursor-pointer">
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs text-slate-400 mb-1.5">Тип соединения по ГОСТ:</label>
+                            <select id="calcJointType" onchange="runWeldCalculator()" class="w-full bg-dark-950 border border-white/15 rounded-xl px-3.5 py-2.5 text-sm text-white outline-none focus:border-weld-500">
+                                <option value="1.0">Стыковое (С17 с разделкой кромок)</option>
+                                <option value="1.15">Тавровое (Т1 в лодочку)</option>
+                                <option value="0.88">Вертикальное снизу вверх (PF)</option>
+                                <option value="0.82">Потолочное положение (PE)</option>
+                                <option value="1.35">Подводная сварка (Глубина 400 м)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs text-slate-400 mb-1.5">Марка стали / Сплава:</label>
+                            <select id="calcMetalGrade" onchange="runWeldCalculator()" class="w-full bg-dark-950 border border-white/15 rounded-xl px-3.5 py-2.5 text-sm text-white outline-none focus:border-weld-500">
+                                <option value="st3">Сталь углеродистая (Ст3 / С245)</option>
+                                <option value="09g2s">Низколегированная (09Г2С — Север)</option>
+                                <option value="aisi">Нержавеющая сталь (12Х18Н10Т)</option>
+                                <option value="titanium">Титан + Чугун + Кварцевое стекло</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="lg:col-span-6 card-metal rounded-2xl p-6 sm:p-8 border border-weld-500/30 flex flex-col justify-between space-y-6">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                        <div class="p-4 rounded-xl bg-dark-950 border border-white/10">
+                            <div class="text-[11px] text-slate-400 uppercase">Диаметр электрода</div>
+                            <div id="calcResDiameter" class="font-display font-black text-2xl sm:text-3xl text-white mt-1">Ø 4.0 мм</div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-dark-950 border border-weld-500/40">
+                            <div class="text-[11px] text-weld-400 uppercase">Расчетный ток</div>
+                            <div id="calcResCurrent" class="font-display font-black text-2xl sm:text-3xl text-weld-500 mt-1">160 А</div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-dark-950 border border-white/10 col-span-2 sm:col-span-1">
+                            <div class="text-[11px] text-slate-400 uppercase">Расход электродов</div>
+                            <div id="calcResPacks" class="font-display font-black text-2xl sm:text-3xl text-white mt-1">4.2 кг</div>
+                        </div>
+                    </div>
+
+                    <div class="p-5 rounded-xl bg-dark-950/90 border border-white/10 space-y-3">
+                        <div class="flex items-center justify-between text-xs sm:text-sm">
+                            <span class="text-slate-400">Время работы обычного сварщика 5-го разряда:</span>
+                            <span id="calcTimeNormal" class="font-mono font-bold text-slate-200">3 ч 45 мин</span>
+                        </div>
+                        <div class="flex items-center justify-between text-xs sm:text-sm border-t border-white/10 pt-2.5">
+                            <span class="text-weld-400 font-bold">Норматив лично Евгения Шатрова:</span>
+                            <span id="calcTimeShatrov" class="font-mono font-black text-weld-400 text-base">14.2 секунды (одним огарком)</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between gap-4 pt-1">
+                        <span class="text-xs text-slate-400">Хотите перенести эти параметры в 2D-тренажёр?</span>
+                        <button type="button" onclick="applyCalcToSimulator()" class="weld-outline-btn px-4 py-2 rounded-lg text-xs font-bold cursor-pointer shrink-0">
+                            Передать в тренажёр ↑
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= OUR COURSES SECTION (Exact Match to Mockup Cards + Working Modals) ================= -->
+    <section id="courses" class="py-16 lg:py-20 bg-dark-900 relative border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="mb-10 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+                <div>
+                    <h2 class="font-display font-black uppercase text-2xl sm:text-4xl text-white tracking-tight">НАШИ КУРСЫ</h2>
+                    <p class="text-slate-300 text-sm sm:text-base mt-1">Выберите подходящую программу обучения (нажмите «Подробнее» для просмотра учебного плана)</p>
+                </div>
+            </div>
+
+            <!-- 3 Main Course Cards Matching Mockup 100% -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                
+                <!-- Card 1: Базовый курс сварки -->
+                <div class="card-metal rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-weld-500/50 transition-all">
+                    <div>
+                        <div class="h-48 w-full overflow-hidden relative bg-dark-900">
+                            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Базовый курс сварки" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg sm:text-xl font-bold text-white">Базовый курс сварки</h3>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                                Освойте основы ручной дуговой сварки и научитесь выполнять качественные швы с первого поджига.
+                            </p>
+                            <div class="flex items-center gap-5 mt-5 text-xs text-slate-300 font-medium">
+                                <span class="flex items-center gap-1.5">
+                                    <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                    4 недели
+                                </span>
+                                <span class="flex items-center gap-1.5">
+                                    <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                                    24 урока
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-3 border-t border-white/10 flex items-center justify-between">
+                        <div class="font-display font-black text-2xl text-weld-500">9 990 ₽</div>
+                        <button type="button" onclick="openCourseModal('basic')" class="weld-outline-btn px-5 py-2 rounded-lg text-xs sm:text-sm font-semibold cursor-pointer">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2: Полный курс сварщика (ХИТ) -->
+                <div class="card-metal rounded-2xl overflow-hidden flex flex-col justify-between relative group border-weld-500/40 hover:border-weld-500 transition-all">
+                    <div class="absolute top-0 right-0 z-10 bg-weld-500 text-dark-950 font-display font-black text-xs uppercase px-4 py-1.5 rounded-bl-xl shadow-lg">
+                        ХИТ
+                    </div>
+
+                    <div>
+                        <div class="h-48 w-full overflow-hidden relative bg-dark-900">
+                            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Полный курс сварщика" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg sm:text-xl font-bold text-white">Полный курс сварщика</h3>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                                Комплексное обучение всем основным видам сварки: MMA, MIG/MAG, TIG и молекулярному сплавлению разнородных сред.
+                            </p>
+                            <div class="flex items-center gap-5 mt-5 text-xs text-slate-300 font-medium">
+                                <span class="flex items-center gap-1.5">
+                                    <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                    8 недель
+                                </span>
+                                <span class="flex items-center gap-1.5">
+                                    <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                                    48 уроков
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-3 border-t border-white/10 flex items-center justify-between">
+                        <div class="font-display font-black text-2xl text-weld-500">19 990 ₽</div>
+                        <button type="button" onclick="openCourseModal('full')" class="weld-outline-btn px-5 py-2 rounded-lg text-xs sm:text-sm font-semibold cursor-pointer">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3: Профессиональный уровень -->
+                <div class="card-metal rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-weld-500/50 transition-all">
+                    <div>
+                        <div class="h-48 w-full overflow-hidden relative bg-dark-900">
+                            <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Профессиональный уровень" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg sm:text-xl font-bold text-white">Профессиональный уровень</h3>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                                Сложные конструкции, работа с разными металлами под рентген, подводная сварка и подготовка к аттестации НАКС.
+                            </p>
+                            <div class="flex items-center gap-5 mt-5 text-xs text-slate-300 font-medium">
+                                <span class="flex items-center gap-1.5">
+                                    <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                    12 недель
+                                </span>
+                                <span class="flex items-center gap-1.5">
+                                    <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                                    72 урока
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-3 border-t border-white/10 flex items-center justify-between">
+                        <div class="font-display font-black text-2xl text-weld-500">29 990 ₽</div>
+                        <button type="button" onclick="openCourseModal('pro')" class="weld-outline-btn px-5 py-2 rounded-lg text-xs sm:text-sm font-semibold cursor-pointer">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- VIP Master Mentorship Banner -->
+            <div class="mt-8 card-metal rounded-2xl p-6 sm:p-8 border border-weld-500/30 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+                <div class="space-y-2 max-w-2xl">
+                    <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-weld-400">
+                        <span>Закрытый индивидуальный тариф • «Абсолютный Монолит VIP»</span>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-bold text-white">
+                        Личный прилет Евгения Шатрова к вам в гараж на вертолете
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        Передача секретной техники бесконтактного поджига дуги силой взгляда, заговоренный держатель электрода и пожизненный иммунитет к «зайчикам» в глазах.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 shrink-0 w-full lg:w-auto justify-between">
+                    <div class="text-left sm:text-right">
+                        <div class="text-xs text-slate-400">Полный пакет с выездом</div>
+                        <div class="font-display font-black text-2xl sm:text-3xl text-weld-500">1 500 000 ₽</div>
+                    </div>
+                    <div class="flex items-center gap-2.5 w-full sm:w-auto">
+                        <button type="button" onclick="openCourseModal('vip')" class="weld-outline-btn px-4 py-3.5 rounded-xl text-xs sm:text-sm font-bold cursor-pointer">
+                            Программа VIP
+                        </button>
+                        <!-- Кнопка оплаты — никуда не ведет -->
+                        <a href="javascript:void(0)" onclick="return false;" class="weld-btn-gradient px-6 py-3.5 rounded-xl text-white font-bold text-sm cursor-pointer text-center select-none">
+                            Оплатить VIP
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= EXAM & CERTIFICATE GENERATOR SECTION ================= -->
+    <section id="exam" class="py-16 lg:py-24 bg-dark-950 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-10">
+                <div class="text-weld-500 text-xs font-bold uppercase tracking-widest mb-2">Аттестационная комиссия им. Е. Шатрова</div>
+                <h2 class="font-display font-black uppercase text-2xl sm:text-4xl text-white tracking-tight">
+                    СДАЙТЕ ЭКЗАМЕН И ПОЛУЧИТЕ <span class="text-weld-500">ИМЕННОЙ СЕРТИФИКАТ</span>
+                </h2>
+                <p class="text-slate-300 text-sm sm:text-base mt-1">
+                    Ответьте на 5 квалификационных вопросов Мастера, введите своё ФИО и сгенерируйте официальный сертификат Академии.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Left: 5 Exam Questions + Name Input -->
+                <div class="lg:col-span-6 card-metal rounded-2xl p-6 sm:p-8 border border-white/15 space-y-5">
+                    <div id="examQuestionsContainer" class="space-y-5">
+                        <!-- Populated by JS -->
+                    </div>
+
+                    <div class="pt-4 border-t border-white/10 space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Ваше ФИО (для внесения в бланк сертификата):</label>
+                            <input id="certStudentName" type="text" placeholder="Например: Иванов Александр Сергеевич" value="Смирнов Алексей Викторович" class="w-full bg-dark-950 border border-white/20 rounded-xl px-4 py-3 text-sm text-white focus:border-weld-500 outline-none">
+                        </div>
+
+                        <div class="flex flex-wrap items-center gap-3">
+                            <button type="button" onclick="generateCertificate()" class="weld-btn-gradient px-6 py-3.5 rounded-xl text-white font-bold text-sm cursor-pointer flex-1">
+                                📜 Выдать и обновить сертификат
+                            </button>
+                            <button type="button" onclick="downloadCertificatePNG()" class="weld-outline-btn px-5 py-3.5 rounded-xl text-xs sm:text-sm font-bold cursor-pointer">
+                                ⬇ Скачать PNG
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Live Canvas Certificate Preview -->
+                <div class="lg:col-span-6 card-metal rounded-2xl p-4 sm:p-6 border border-weld-500/40 space-y-4">
+                    <div class="flex items-center justify-between text-xs">
+                        <span class="font-bold uppercase tracking-wider text-weld-400">Предпросмотр документа (Реестр НАКС-ШАТРОВ)</span>
+                        <span id="certScoreLabel" class="font-mono text-slate-300">Разряд по итогам теста: 10-й разряд</span>
+                    </div>
+                    <div class="rounded-xl overflow-hidden border border-white/15 bg-dark-950 shadow-2xl">
+                        <canvas id="certificateCanvas" width="900" height="620" class="w-full h-auto block"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= BOTTOM SPLIT: REVIEWS SLIDER & PAYMENT WIDGET ================= -->
+    <section id="reviews" class="py-16 lg:py-20 bg-dark-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                
+                <!-- Left Column: ОТЗЫВЫ УЧЕНИКОВ (Fully working slider) -->
+                <div class="lg:col-span-6 flex flex-col justify-between space-y-4">
+                    <div>
+                        <h2 class="font-display font-black uppercase text-xl sm:text-2xl text-white tracking-tight">
+                            ОТЗЫВЫ УЧЕНИКОВ
+                        </h2>
+                        <p class="text-xs sm:text-sm text-slate-400 mt-1">Реальные истории выпускников Академии Евгения Шатрова</p>
+                    </div>
+
+                    <div class="card-metal rounded-2xl p-6 sm:p-7 border border-white/10 flex-1 flex flex-col justify-between">
+                        <div class="flex items-center justify-between gap-3 my-auto">
+                            <!-- Prev Review Button (Working) -->
+                            <button type="button" onclick="changeReview(-1)" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-weld-500/20 border border-white/10 flex items-center justify-center text-slate-300 hover:text-white transition-colors shrink-0 cursor-pointer" aria-label="Предыдущий отзыв">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                            </button>
+
+                            <!-- Review Content -->
+                            <div class="flex-1 flex flex-col sm:flex-row items-start gap-4 px-2">
+                                <img id="reviewAvatar" 
+                                     src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" 
+                                     alt="Игорь М." 
+                                     class="w-14 h-14 rounded-full object-cover border-2 border-weld-500 shrink-0">
+                                <div class="space-y-1.5">
+                                    <div class="flex flex-wrap items-center gap-2">
+                                        <span id="reviewName" class="font-bold text-white text-sm sm:text-base">Игорь М.</span>
+                                        <span id="reviewRole" class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300">Выпускник потока</span>
+                                        <div class="flex items-center text-weld-500 text-xs tracking-tighter">
+                                            ★★★★★
+                                        </div>
+                                    </div>
+                                    <p id="reviewText" class="text-xs sm:text-sm text-slate-200 leading-relaxed">
+                                        «Отличный курс! Евгений объясняет простым языком, много практики. За 2 месяца вышел на хороший уровень и уже работаю по специальности.»
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Next Review Button (Working) -->
+                            <button type="button" onclick="changeReview(1)" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-weld-500/20 border border-white/10 flex items-center justify-center text-slate-300 hover:text-white transition-colors shrink-0 cursor-pointer" aria-label="Следующий отзыв">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                            </button>
+                        </div>
+
+                        <!-- Carousel Dots -->
+                        <div class="pt-5 border-t border-white/10 flex items-center justify-between">
+                            <span id="reviewCounterText" class="text-xs font-mono text-slate-400">Отзыв 1 из 5</span>
+                            <div id="reviewDots" class="flex items-center gap-2">
+                                <!-- Populated by JS -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: НАЧНИТЕ ОБУЧЕНИЕ СЕЙЧАС (Interactive selector + Dead-End Payment Button) -->
+                <div class="lg:col-span-6">
+                    <div class="cta-glow-box rounded-2xl p-6 sm:p-8 space-y-5 h-full flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <h3 class="font-display font-black uppercase text-xl sm:text-2xl text-white tracking-tight">
+                                НАЧНИТЕ ОБУЧЕНИЕ СЕЙЧАС
+                            </h3>
+                            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
+                                Получите востребованную профессию и стабильный доход вместе с Евгением Шатровым!
+                            </p>
+                        </div>
+
+                        <!-- Interactive Tariff & Payment Method Selector (Works in UI) -->
+                        <div class="space-y-3 pt-1">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-[11px] text-slate-300 uppercase font-semibold mb-1">Выбранная программа:</label>
+                                    <select id="checkoutTariffSelect" onchange="updateCheckoutPrice()" class="w-full bg-dark-950/90 border border-white/20 rounded-xl px-3 py-2.5 text-xs sm:text-sm text-white outline-none focus:border-weld-500">
+                                        <option value="9990">Базовый курс — 9 990 ₽</option>
+                                        <option value="19990" selected>Полный курс (ХИТ) — 19 990 ₽</option>
+                                        <option value="29990">Профессиональный — 29 990 ₽</option>
+                                        <option value="1500000">Абсолютный Монолит VIP — 1 500 000 ₽</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-[11px] text-slate-300 uppercase font-semibold mb-1">Промокод (попробуйте УОНИ140):</label>
+                                    <div class="flex gap-1.5">
+                                        <input id="checkoutPromoInput" type="text" placeholder="УОНИ140" class="w-full bg-dark-950/90 border border-white/20 rounded-xl px-3 py-2 text-xs sm:text-sm text-white outline-none focus:border-weld-500 uppercase">
+                                        <button type="button" onclick="applyPromoCode()" class="px-3 py-2 rounded-xl bg-white/10 hover:bg-weld-500 text-xs font-bold text-white transition-colors cursor-pointer shrink-0">
+                                            ОК
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between text-xs pt-1">
+                                <span id="promoFeedbackText" class="text-slate-300">К оплате (без комиссии):</span>
+                                <span id="checkoutTotalSum" class="font-display font-black text-xl text-weld-400">19 990 ₽</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-2 flex flex-wrap items-center justify-between gap-4 border-t border-white/15">
+                            <!-- Кнопка Оплатить курс: выглядит активной, нажимается, но НИКУДА НЕ ВЕДЕТ -->
+                            <a href="javascript:void(0)" onclick="return false;" class="weld-btn-gradient px-7 py-3.5 rounded-xl text-white font-bold text-sm sm:text-base inline-flex items-center gap-3 cursor-pointer select-none">
+                                <svg class="w-5 h-5 text-dark-950 fill-current" viewBox="0 0 24 24">
+                                    <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/>
+                                </svg>
+                                <span>Оплатить курс</span>
+                            </a>
+
+                            <!-- Interactive Payment System Selector Badges (VISA, Mastercard, МИР) -->
+                            <div class="flex items-center gap-2">
+                                <button type="button" onclick="selectPayBadge(this)" class="pay-badge px-2.5 py-1 rounded-lg border border-weld-500 bg-weld-500/20 font-display font-black italic text-white text-xs sm:text-sm tracking-wider cursor-pointer">
+                                    VISA
+                                </button>
+                                <button type="button" onclick="selectPayBadge(this)" class="pay-badge px-2.5 py-1 rounded-lg border border-white/15 bg-white/5 flex items-center cursor-pointer">
+                                    <span class="w-4 h-4 rounded-full bg-red-600/90 inline-block"></span>
+                                    <span class="w-4 h-4 rounded-full bg-amber-500/90 inline-block -ml-1.5"></span>
+                                </button>
+                                <button type="button" onclick="selectPayBadge(this)" class="pay-badge px-2.5 py-1 rounded-lg border border-white/15 bg-white/5 font-display font-black text-white text-xs sm:text-sm tracking-widest cursor-pointer">
+                                    МИР
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= COURSE DETAILS MODAL WINDOW (Opens on clicking «Подробнее») ================= -->
+    <div id="courseModalBackdrop" class="fixed inset-0 z-50 hidden bg-dark-950/85 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="card-metal rounded-2xl max-w-2xl w-full border border-weld-500/50 overflow-hidden shadow-2xl animate-fadeIn">
+            <div class="px-6 py-4 bg-dark-950 border-b border-white/10 flex items-center justify-between">
+                <div>
+                    <span id="modalCourseBadge" class="text-[11px] font-bold uppercase tracking-widest text-weld-400">Учебная программа</span>
+                    <h3 id="modalCourseTitle" class="font-display font-black text-xl sm:text-2xl text-white">Полный курс сварщика</h3>
+                </div>
+                <button type="button" onclick="closeCourseModal()" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-white/15 text-slate-300 hover:text-white flex items-center justify-center text-lg font-bold cursor-pointer">
+                    ✕
+                </button>
+            </div>
+
+            <div class="p-6 space-y-5 max-h-[75vh] overflow-y-auto course-scroll">
+                <p id="modalCourseDesc" class="text-sm text-slate-200 leading-relaxed"></p>
+
+                <div class="grid grid-cols-3 gap-3">
+                    <div class="p-3 rounded-xl bg-dark-950 border border-white/10">
+                        <div class="text-[11px] text-slate-400">Длительность</div>
+                        <div id="modalCourseDuration" class="text-sm font-bold text-white mt-0.5">8 недель</div>
+                    </div>
+                    <div class="p-3 rounded-xl bg-dark-950 border border-white/10">
+                        <div class="text-[11px] text-slate-400">Объем практики</div>
+                        <div id="modalCourseLessons" class="text-sm font-bold text-white mt-0.5">48 уроков</div>
+                    </div>
+                    <div class="p-3 rounded-xl bg-dark-950 border border-weld-500/30">
+                        <div class="text-[11px] text-weld-400">Присваиваемый разряд</div>
+                        <div id="modalCourseRank" class="text-sm font-bold text-weld-400 mt-0.5">До 9-го разряда</div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="text-xs font-bold uppercase tracking-wider text-weld-400 mb-2.5">Что входит в программу обучения:</div>
+                    <ul id="modalCourseSyllabus" class="space-y-2 text-xs sm:text-sm text-slate-200">
+                        <!-- Populated by JS -->
+                    </ul>
+                </div>
+
+                <div class="p-4 rounded-xl bg-weld-500/10 border border-weld-500/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div>
+                        <div class="text-xs text-slate-300">Стоимость полного доступа:</div>
+                        <div id="modalCoursePrice" class="font-display font-black text-2xl sm:text-3xl text-weld-500">19 990 ₽</div>
+                    </div>
+                    <div class="flex items-center gap-3 w-full sm:w-auto">
+                        <button type="button" onclick="closeCourseModal()" class="px-4 py-3 rounded-xl bg-dark-800 hover:bg-dark-700 text-xs sm:text-sm font-semibold text-slate-300 border border-white/10 cursor-pointer">
+                            Закрыть окно
+                        </button>
+                        <!-- Кнопка оплаты внутри модалки — никуда не ведет -->
+                        <a href="javascript:void(0)" onclick="return false;" class="weld-btn-gradient px-6 py-3 rounded-xl text-white font-bold text-sm cursor-pointer select-none text-center flex-1 sm:flex-initial">
+                            Оплатить курс
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-dark-950 border-t border-white/10 py-10 text-xs text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <span class="font-bold text-white">SHATROV WELDING ACADEMY</span>
+                <span>•</span>
+                <span>Все швы защищены герметично под давлением 400 атм.</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-6">
+                <a href="#free-course" class="hover:text-weld-400 transition-colors">14 бесплатных уроков</a>
+                <a href="#simulator" class="hover:text-weld-400 transition-colors">2D-тренажёр</a>
+                <a href="javascript:void(0)" onclick="return false;" class="hover:text-weld-400 transition-colors cursor-pointer">Лицензия НАКС 14-го разряда</a>
+                <a href="javascript:void(0)" onclick="return false;" class="hover:text-weld-400 transition-colors cursor-pointer">Оплатить обучение</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= SCRIPTS (ALL INTERACTIVE LOGIC) ================= -->
+    <script>
+        // --- 0. NAVIGATION & MOBILE MENU ---
+        function scrollToSection(id) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // --- 1. AUTHOR DOSSIER TABS ---
+        function switchAuthorTab(tabKey) {
+            const tabs = ['records', 'telemetry', 'chronology'];
+            tabs.forEach(k => {
+                const content = document.getElementById(`tabContent-${k}`);
+                const btn = document.getElementById(`tabBtn-${k}`);
+                if (k === tabKey) {
+                    content.classList.remove('hidden');
+                    btn.className = "px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-weld-500 text-white shadow cursor-pointer";
+                } else {
+                    content.classList.add('hidden');
+                    btn.className = "px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-300 hover:bg-white/5 cursor-pointer";
+                }
+            });
+        }
+
+        // --- 2. INTERACTIVE 2D WELDING SIMULATOR («ШАТРОВ-9000») ---
+        let simCanvas, simCtx;
+        let isWelding = false;
+        let maskEnabled = true;
+        let slagChipped = false;
+        let weldBeads = []; // {x, y, r, status: 'optimal'|'burn'|'cold', electrode}
+        let simSparks = [];
+        let pointerPos = { x: 100, y: 180 };
+
+        function updateSimControls() {
+            const amp = parseFloat(document.getElementById('simAmpRange').value);
+            const volt = parseFloat(document.getElementById('simVoltRange').value);
+            document.getElementById('simAmpDisplay').textContent = amp;
+            document.getElementById('simVoltDisplay').textContent = volt.toFixed(1);
+            document.getElementById('simAmpLabel').textContent = `${amp} А`;
+            document.getElementById('simVoltLabel').textContent = `${volt.toFixed(1)} В`;
+        }
+
+        function setShatrovPreset() {
+            document.getElementById('simAmpRange').value = 140;
+            document.getElementById('simVoltRange').value = 18.5;
+            document.getElementById('simElectrodeSelect').value = 'uoni';
+            updateSimControls();
+            document.getElementById('simRankBadge').textContent = 'Режим 140А/18.5В активирован';
+            document.getElementById('simVerdictText').textContent = 'Установлен легендарный режим Евгения Шатрова (140 Ампер, 18.5 Вольт). Теперь этим аппаратом можно варить даже чугун со стеклом.';
+        }
+
+        function toggleWeldingMask() {
+            maskEnabled = !maskEnabled;
+            const dot = document.getElementById('maskStatusDot');
+            const txt = document.getElementById('maskStatusText');
+            if (maskEnabled) {
+                dot.className = 'w-2.5 h-2.5 rounded-full bg-emerald-400';
+                txt.textContent = 'Маска Хамелеон: ВКЛ (13 DIN)';
+            } else {
+                dot.className = 'w-2.5 h-2.5 rounded-full bg-red-500 animate-ping';
+                txt.textContent = 'БЕЗ МАСКИ (Метод прищура Шатрова)';
+            }
+        }
+
+        function getMaterialSpec() {
+            const mat = document.getElementById('simMaterialSelect').value;
+            const map = {
+                pipe: { name: 'Труба магистральная 12 мм', minA: 105, maxA: 175 },
+                muffler: { name: 'Гнилой глушитель ВАЗ 0.8 мм', minA: 30, maxA: 65 },
+                icebreaker: { name: 'Обшивка атомного ледокола 40 мм', minA: 195, maxA: 350 },
+                castglass: { name: 'Чугун + Оконное стекло + Дуб', minA: 135, maxA: 145 }
+            };
+            return map[mat] || map.pipe;
+        }
+
+        function resetWeldCanvas() {
+            weldBeads = [];
+            slagChipped = false;
+            const spec = getMaterialSpec();
+            document.getElementById('simTableMaterialName').textContent = spec.name;
+            document.getElementById('simSlagBadge').textContent = 'Шлак: не отбит';
+            document.getElementById('simSlagBadge').className = 'px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-mono';
+            document.getElementById('simPenetrationVal').textContent = '0%';
+            document.getElementById('simStraightnessVal').textContent = '—';
+            document.getElementById('simRankBadge').textContent = 'Заготовка чистая';
+            document.getElementById('simVerdictText').textContent = `Деталь «${spec.name}» уложена на сварочный стол. Рекомендуемый диапазон тока: ${spec.minA}–${spec.maxA} А.`;
+        }
+
+        function chipSlagOnCanvas() {
+            if (weldBeads.length === 0) {
+                document.getElementById('simVerdictText').textContent = 'Сначала положите сварной шов на заготовку, чтобы было с чего отбивать шлаковую корку!';
+                return;
+            }
+            slagChipped = true;
+            document.getElementById('simSlagBadge').textContent = 'Шлак отбит: Золотая чешуя!';
+            document.getElementById('simSlagBadge').className = 'px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono';
+
+            // Burst of slag particles
+            for (let i = 0; i < 35; i++) {
+                const sample = weldBeads[Math.floor(Math.random() * weldBeads.length)];
+                simSparks.push({
+                    x: sample.x,
+                    y: sample.y,
+                    vx: (Math.random() - 0.5) * 8,
+                    vy: (Math.random() - 0.8) * 7,
+                    size: 2 + Math.random() * 3,
+                    alpha: 1,
+                    color: '#94A3B8'
+                });
+            }
+            evaluateWeldQuality();
+        }
+
+        function evaluateWeldQuality() {
+            if (weldBeads.length < 8) return;
+            const centerY = simCanvas.height / 2;
+            let totalDeviation = 0;
+            let burns = 0;
+            let colds = 0;
+
+            weldBeads.forEach(b => {
+                totalDeviation += Math.abs(b.y - centerY);
+                if (b.status === 'burn') burns++;
+                if (b.status === 'cold') colds++;
+            });
+
+            const avgDev = totalDeviation / weldBeads.length;
+            const straightness = Math.max(10, Math.min(100, Math.round(100 - avgDev * 1.4)));
+            const coverage = Math.min(100, Math.round((weldBeads.length / 85) * 100));
+
+            document.getElementById('simPenetrationVal').textContent = `${coverage}%`;
+            document.getElementById('simStraightnessVal').textContent = `${straightness}%`;
+
+            const badge = document.getElementById('simRankBadge');
+            const verdict = document.getElementById('simVerdictText');
+
+            if (burns > weldBeads.length * 0.25) {
+                badge.textContent = 'ПРОЖОГ ДЕТАЛИ (2 разряд)';
+                verdict.textContent = 'Евгений Шатров нахмурился: «Ток слишком велик для этой толщины! Вы прожгли дыру, в которую пролезет кошка. Убавьте ампераж или возьмите металл потолще».';
+            } else if (colds > weldBeads.length * 0.25) {
+                badge.textContent = 'НЕПРОВАР И ЗАЛИПАНИЕ (3 разряд)';
+                verdict.textContent = 'Евгений Шатров: «Маловато тока! Электрод липнет, дуга не плавит кромки, получились холодные наплывы. Добавьте ампер на табло!»';
+            } else if (straightness >= 88) {
+                badge.textContent = 'ДОПУСК 14-ГО РАЗРЯДА!';
+                verdict.textContent = slagChipped
+                    ? 'Евгений Шатров аплодирует стоя: «Шлак слетел от одного взгляда! Под ним — эталонная радужно-золотая чешуя без единого подреза. Труба пройдет любой рентген!»'
+                    : 'Евгений Шатров кивает: «Рука твердая, как бетон М500! Теперь нажмите кнопку "Отбить шлак молоточком", чтобы проверить цвет побежалости».';
+            } else {
+                badge.textContent = 'Твердый 6-й разряд';
+                verdict.textContent = 'Евгений Шатров: «Провар корня хороший, герметичность есть, но рука местами вильнула от осевой линии стыка. Зафиксируйте локоть по методу Железного краба!»';
+            }
+        }
+
+        function initSimulatorCanvas() {
+            simCanvas = document.getElementById('weldWorkbenchCanvas');
+            if (!simCanvas) return;
+            simCtx = simCanvas.getContext('2d');
+
+            function resizeSim() {
+                const rect = simCanvas.parentElement.getBoundingClientRect();
+                simCanvas.width = rect.width;
+                simCanvas.height = Math.max(340, rect.height);
+            }
+            window.addEventListener('resize', resizeSim);
+            resizeSim();
+
+            function getCanvasPos(e) {
+                const rect = simCanvas.getBoundingClientRect();
+                const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+                const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+                return {
+                    x: clientX - rect.left,
+                    y: clientY - rect.top
+                };
+            }
+
+            function addBeadPoint(pos) {
+                const amp = parseFloat(document.getElementById('simAmpRange').value);
+                const electrode = document.getElementById('simElectrodeSelect').value;
+                const spec = getMaterialSpec();
+
+                let status = 'optimal';
+                if (amp > spec.maxA) status = 'burn';
+                else if (amp < spec.minA) status = 'cold';
+
+                // Special rule: if amp==140 and volt==18.5, Shatrov's sacred preset always welds optimally!
+                const volt = parseFloat(document.getElementById('simVoltRange').value);
+                if (amp === 140 && volt === 18.5) {
+                    status = 'optimal';
+                }
+
+                weldBeads.push({
+                    x: pos.x,
+                    y: pos.y,
+                    r: Math.max(8, Math.min(20, amp / 11)),
+                    status,
+                    electrode
+                });
+
+                // Spawn flying sparks
+                for (let i = 0; i < 6; i++) {
+                    const angle = Math.random() * Math.PI * 2;
+                    const spd = 2 + Math.random() * 7;
+                    simSparks.push({
+                        x: pos.x,
+                        y: pos.y,
+                        vx: Math.cos(angle) * spd,
+                        vy: Math.sin(angle) * spd - 1.5,
+                        size: 1.5 + Math.random() * 2.5,
+                        alpha: 1,
+                        color: electrode === 'tig' ? '#60A5FA' : (Math.random() > 0.3 ? '#FF9838' : '#FFFBEB')
+                    });
+                }
+            }
+
+            simCanvas.addEventListener('mousedown', (e) => {
+                isWelding = true;
+                pointerPos = getCanvasPos(e);
+                addBeadPoint(pointerPos);
+            });
+            simCanvas.addEventListener('mousemove', (e) => {
+                pointerPos = getCanvasPos(e);
+                if (isWelding) addBeadPoint(pointerPos);
+            });
+            window.addEventListener('mouseup', () => {
+                if (isWelding) {
+                    isWelding = false;
+                    document.getElementById('unmaskedFlashOverlay').style.opacity = '0';
+                    evaluateWeldQuality();
+                }
+            });
+
+            simCanvas.addEventListener('touchstart', (e) => {
+                e.preventDefault();
+                isWelding = true;
+                pointerPos = getCanvasPos(e);
+                addBeadPoint(pointerPos);
+            }, { passive: false });
+            simCanvas.addEventListener('touchmove', (e) => {
+                e.preventDefault();
+                pointerPos = getCanvasPos(e);
+                if (isWelding) addBeadPoint(pointerPos);
+            }, { passive: false });
+            simCanvas.addEventListener('touchend', () => {
+                if (isWelding) {
+                    isWelding = false;
+                    document.getElementById('unmaskedFlashOverlay').style.opacity = '0';
+                    evaluateWeldQuality();
+                }
+            });
+
+            function renderWorkbench() {
+                const w = simCanvas.width;
+                const h = simCanvas.height;
+                const midY = h / 2;
+
+                // 1. Draw two steel plates with a V-groove seam in the center
+                simCtx.fillStyle = '#161C28';
+                simCtx.fillRect(0, 0, w, midY - 6);
+                simCtx.fillStyle = '#121722';
+                simCtx.fillRect(0, midY + 6, w, midY);
+
+                // Brushed metal texture lines
+                simCtx.strokeStyle = 'rgba(255,255,255,0.03)';
+                simCtx.lineWidth = 1;
+                for (let y = 16; y < h; y += 18) {
+                    simCtx.beginPath();
+                    simCtx.moveTo(0, y);
+                    simCtx.lineTo(w, y);
+                    simCtx.stroke();
+                }
+
+                // Bevel groove gap
+                simCtx.fillStyle = '#07090D';
+                simCtx.fillRect(0, midY - 6, w, 12);
+
+                // Dashed guideline along the root of the joint
+                simCtx.save();
+                simCtx.strokeStyle = 'rgba(255, 122, 0, 0.35)';
+                simCtx.setLineDash([8, 6]);
+                simCtx.beginPath();
+                simCtx.moveTo(30, midY);
+                simCtx.lineTo(w - 30, midY);
+                simCtx.stroke();
+                simCtx.restore();
+
+                // 2. Draw laid weld beads
+                for (let i = 0; i < weldBeads.length; i++) {
+                    const b = weldBeads[i];
+                    simCtx.save();
+                    simCtx.beginPath();
+                    simCtx.arc(b.x, b.y, b.r, 0, Math.PI * 2);
+
+                    if (b.status === 'burn') {
+                        // Burn-through hole
+                        simCtx.fillStyle = '#050507';
+                        simCtx.strokeStyle = '#EF4444';
+                        simCtx.lineWidth = 2;
+                        simCtx.fill();
+                        simCtx.stroke();
+                    } else if ( b.status === 'cold') {
+                        // Cold erratic lump
+                        simCtx.fillStyle = '#475569';
+                        simCtx.strokeStyle = '#1E293B';
+                        simCtx.lineWidth = 1.5;
+                        simCtx.fill();
+                        simCtx.stroke();
+                    } else {
+                        // Optimal bead: either dark slag crust or golden-rainbow TIG/MMA ripples after chipping
+                        if (!slagChipped && b.electrode !== 'tig') {
+                            simCtx.fillStyle = '#27272A';
+                            simCtx.strokeStyle = '#52525B';
+                            simCtx.lineWidth = 1.5;
+                            simCtx.fill();
+                            simCtx.stroke();
+                        } else {
+                            const grad = simCtx.createRadialGradient(b.x - 3, b.y - 3, 2, b.x, b.y, b.r);
+                            grad.addColorStop(0, '#FDE68A');
+                            grad.addColorStop(0.55, '#F59E0B');
+                            grad.addColorStop(0.85, '#6366F1');
+                            grad.addColorStop(1, '#334155');
+                            simCtx.fillStyle = grad;
+                            simCtx.strokeStyle = 'rgba(255,255,255,0.28)';
+                            simCtx.lineWidth = 1;
+                            simCtx.fill();
+                            simCtx.stroke();
+                        }
+                    }
+                    simCtx.restore();
+                }
+
+                // 3. Green Chameleon 13 DIN filter tint when actively welding with mask ON
+                if (isWelding) {
+                    if (maskEnabled) {
+                        simCtx.fillStyle = 'rgba(6, 45, 24, 0.52)';
+                        simCtx.fillRect(0, 0, w, h);
+                    } else {
+                        document.getElementById('unmaskedFlashOverlay').style.opacity = (Math.random() * 0.25).toFixed(2);
+                    }
+
+                    // Draw blinding arc glow at pointerPos
+                    const arcGrad = simCtx.createRadialGradient(pointerPos.x, pointerPos.y, 2, pointerPos.x, pointerPos.y, 65);
+                    arcGrad.addColorStop(0, '#FFFFFF');
+                    arcGrad.addColorStop(0.25, '#FFEDD5');
+                    arcGrad.addColorStop(0.55, 'rgba(255, 122, 0, 0.55)');
+                    arcGrad.addColorStop(1, 'rgba(255, 122, 0, 0)');
+                    simCtx.fillStyle = arcGrad;
+                    simCtx.beginPath();
+                    simCtx.arc(pointerPos.x, pointerPos.y, 65, 0, Math.PI * 2);
+                    simCtx.fill();
+                }
+
+                // 4. Draw Electrode Stick following cursor
+                simCtx.save();
+                simCtx.strokeStyle = '#94A3B8';
+                simCtx.lineWidth = 5;
+                simCtx.lineCap = 'round';
+                simCtx.beginPath();
+                simCtx.moveTo(pointerPos.x, pointerPos.y);
+                simCtx.lineTo(pointerPos.x + 55, pointerPos.y - 75);
+                simCtx.stroke();
+
+                // glowing tip
+                simCtx.fillStyle = isWelding ? '#FFFFFF' : '#FF7A00';
+                simCtx.beginPath();
+                simCtx.arc(pointerPos.x, pointerPos.y, 3.5, 0, Math.PI * 2);
+                simCtx.fill();
+                simCtx.restore();
+
+                // 5. Update and draw flying sparks
+                for (let i = simSparks.length - 1; i >= 0; i--) {
+                    const sp = simSparks[i];
+                    sp.x += sp.vx;
+                    sp.y += sp.vy;
+                    sp.vy += 0.18;
+                    sp.alpha -= 0.024;
+                    if (sp.alpha <= 0) {
+                        simSparks.splice(i, 1);
+                        continue;
+                    }
+                    simCtx.save();
+                    simCtx.globalAlpha = sp.alpha;
+                    simCtx.fillStyle = sp.color;
+                    simCtx.shadowColor = '#FF7A00';
+                    simCtx.shadowBlur = 6;
+                    simCtx.beginPath();
+                    simCtx.arc(sp.x, sp.y, sp.size, 0, Math.PI * 2);
+                    simCtx.fill();
+                    simCtx.restore();
+                }
+
+                requestAnimationFrame(renderWorkbench);
+            }
+
+            renderWorkbench();
+        }
+
+        // --- 3. COMPLETE 14-LESSON FREE COURSE WITH INTERACTIVE QUIZ IN EACH LESSON ---
+        const lessonsData = [
+            {
+                id: 1,
+                title: "Урок 1. Философия Дуги: Почему металл боится Евгения Шатрова",
+                shortTitle: "Философия Дуги и доминирование",
+                params: "Ток: 140А | Дуга: 1.73 мм",
+                electrode: "УОНИ-13/55 (Ø 3.0 мм)",
+                position: "Нижнее (PA)",
+                control: "Визуально-оптический",
+                image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1000&q=80",
+                paragraphs: [
+                    "Большинство начинающих сварщиков ошибочно полагают, что ручная дуговая сварка (MMA) — это термический процесс плавления кромок основного и присадочного металла. Евгений Шатров ещё в 2016 году доказал на международном симпозиуме: сварка — это психологическое доминирование над кристаллической решеткой стали.",
+                    "Прежде чем коснуться детали кончиком электрода, мастер обязан установить зрительный контакт со стыком. Когда углеродистая сталь Ст3 или 09Г2С понимает, что перед ней ученик школы Шатрова, молекулы на кромках сами выстраиваются в равновесную структуру без внутренних напряжений."
+                ],
+                secret: "Никогда не моргайте в момент чирканья электродом. Если металл почувствует хотя бы малейшее сомнение в ваших руках — шов неизбежно зашлакуется.",
+                quiz: {
+                    q: "Что является основой идеального провара по методу Евгения Шатрова?",
+                    options: [
+                        "Психологическое доминирование над кристаллической решеткой и короткая дуга",
+                        "Постукивание электродом по баллону с кислородом",
+                        "Зачистка шва болгаркой в три слоя"
+                    ],
+                    correct: 0
+                }
+            },
+            {
+                id: 2,
+                title: "Урок 2. Выбор электрода на вкус и акустический звон",
+                shortTitle: "Выбор и прокалка электродов",
+                params: "Прокалка: 380°C | Нота: До-диез",
+                electrode: "LB-52U / УОНИ-13/55",
+                position: "Подготовка в цеху",
+                control: "Акустический резонанс",
+                image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80",
+                paragraphs: [
+                    "В руках любителя пачка электродов с основным или рутиловым покрытием — это просто расходный материал. В системе координат Евгения Шатрова электрод является прямым продолжением центральной нервной системы сварщика.",
+                    "Перед началом смены электроды с основным покрытием необходимо прокалить в печи при температуре 350–400°C. После остывания уроните контрольный электрод на стальную плиту: правильно прокаленный стержень издает чистый хрустальный звон в тональности «До-диез»."
+                ],
+                secret: "Сам Евгений Шатров не пользуется прокалочным шкафом: он зажимает пачку отсыревших электродов под мышкой на 90 секунд, после чего влажность обмазки падает до абсолютного нуля.",
+                quiz: {
+                    q: "Какую ноту должен издавать правильно прокаленный электрод УОНИ-13/55 при падении на наковальню?",
+                    options: ["Фа-бемоль", "Чистый «До-диез»", "Глухой стук"],
+                    correct: 1
+                }
+            },
+            {
+                id: 3,
+                title: "Урок 3. Постановка руки «Железный краб Шатрова»",
+                shortTitle: "Постановка руки «Железный краб»",
+                params: "Ток: 115А | Вылет: 1.5 мм",
+                electrode: "ОК 46.00 (Ø 3.2 мм)",
+                position: "Горизонтальное (PB)",
+                control: "Отсутствие подрезов",
+                image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=80",
+                paragraphs: [
+                    "Главная причина неровной чешуйчатости у новичков — вес сварочного кабеля, который тянет кисть вниз. В методике Шатрова кабель дважды оборачивается вокруг предплечья, снимая нагрузку с лучезапястного сустава.",
+                    "Локоть фиксируется так жестко, словно в суставную сумку залит бетон марки М600. Подача электрода в сварочную ванну по мере его плавления осуществляется исключительно микроскопическим сведением лопаток со скоростью ровно 2,4 миллиметра в секунду."
+                ],
+                secret: "Для домашней тренировки держите зажженную спичку на расстоянии 1 миллиметра от стальной линейки в течение двух часов, сохраняя идеально одинаковый зазор.",
+                quiz: {
+                    q: "Зачем обматывать сварочный кабель вокруг предплечья?",
+                    options: [
+                        "Чтобы снять вес кабеля с кисти и исключить дрожание руки",
+                        "Для индукционного подогрева рукавиц зимой",
+                        "Чтобы увеличить сварочный ток на 50 Ампер"
+                    ],
+                    correct: 0
+                }
+            },
+            {
+                id: 4,
+                title: "Урок 4. Чтение сварочной ванны как открытой книги",
+                shortTitle: "Отличие шлака от жидкого металла",
+                params: "Ток: 130А | Угол: 15° углом назад",
+                electrode: "УОНИ-13/55 (Ø 4.0 мм)",
+                position: "Нижнее в лодочку",
+                control: "Провар корня 100%",
+                image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1000&q=80",
+                paragraphs: [
+                    "Неопытный глаз видит сквозь светофильтр лишь слепящее оранжевое пятно. Профессионал отчетливо разделяет три зоны: дуговой промежуток, каплеобразную ванну чистого жидкого металла и темную, подвижную шапку расплавленного шлака.",
+                    "Шлак всегда стремится обогнать дугу и затечь вперед, вызывая непровар. Ваша задача — держать наклон электрода строго 15 градусов от вертикали и давлением газов дуги сгонять шлаковую корку на уже сформированный валик."
+                ],
+                secret: "Всматриваясь в конвекционные потоки жидкой сварочной ванны, Евгений Шатров безошибочно определяет не только глубину провара корня, но и котировки акций металлургических гигантов.",
+                quiz: {
+                    q: "Куда необходимо сгонять расплавленный шлак во время ведения шва?",
+                    options: [
+                        "Вперед перед дугой",
+                        "Назад, на уже сформированный валик шва, под углом 15 градусов",
+                        "В стороны на холодный металл"
+                    ],
+                    correct: 1
+                }
+            },
+            {
+                id: 5,
+                title: "Урок 5. Проблема «Зайчиков» и закалка сетчатки глаза",
+                shortTitle: "Защита зрения и фильтр Хамелеон",
+                params: "Затемнение: 11–13 DIN | УФ-защита",
+                electrode: "Любой тип",
+                position: "Все пространственные",
+                control: "Техника безопасности",
+                image: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=1000&q=80",
+                paragraphs: [
+                    "Электроофтальмия («зайчики») возникает при поражении роговицы жестким ультрафиолетовым спектром сварочной дуги. До получения 10-го разряда работа без сертифицированной маски со светофильтром 11–13 DIN категорически запрещена.",
+                    "Перед зажиганием дуги обязательно проверьте время срабатывания автоматического светофильтра «Хамелеон» (не более 0,00004 секунды) и плотность прилегания кожаных краг."
+                ],
+                secret: "Евгений Шатров не использует сварочную маску с 2018 года: он просто прищуривается с таким усилием, что его ресницы образуют естественную дифракционную решетку 14 DIN.",
+                quiz: {
+                    q: "Какая степень затемнения светофильтра рекомендуется для стандартной дуговой сварки?",
+                    options: ["2–3 DIN (солнцезащитные очки)", "11–13 DIN (либо прищур Шатрова после 10-го разряда)", "Сварка с закрытыми глазами на слух"],
+                    correct: 1
+                }
+            },
+            {
+                id: 6,
+                title: "Урок 6. Вертикальный шов снизу вверх: Отмена гравитации",
+                shortTitle: "Вертикальный шов снизу вверх (PF)",
+                params: "Ток: -15% от нижнего (95–105А)",
+                electrode: "LB-52U (Ø 3.2 мм)",
+                position: "Вертикальное на подъем (PF)",
+                control: "Рентгенография",
+                image: "https://images.unsplash.com/photo-1590959651373-a3db0f38a961?auto=format&fit=crop&w=1000&q=80",
+                paragraphs: [
+                    "При сварке вертикального стыка на подъем сила тяжести пытается стянуть расплавленную каплю вниз. Для победы над гравитацией сварочный ток снижается на 12–15% по сравнению с нижним положением.",
+                    "Используйте траекторию «Полумесяц Шатрова»: задерживайте дугу на левой и правой кромках разделки ровно на 0,7 секунды для плавления кромок, а центральную часть ванны пролетайте молниеносным движением."
+                ],
+                secret: "Когда Евгений варит вертикал на атомных реакторах, расплавленный металл сам течет вверх по разделке из уважения к авторитету сварщика.",
+                quiz: {
+                    q: "Как нужно изменить силу тока при переходе из нижнего положения на вертикальный шов?",
+                    options: ["Увеличить в 2 раза", "Уменьшить на 10–15% и задерживаться на краях разделки", "Оставить максимальной"],
+                    correct: 1
+                }
+            },
+            {
+                id: 7,
+                title: "Урок 7. Потолочный шов: Когда сталь кипит над головой",
+                shortTitle: "Потолочный шов (PE) без капель",
+                params: "Ток: 100А | Сверхкороткая дуга",
+                electrode: "УОНИ-13/55 (Ø 3.0 мм)",
+                position: "Потолочное (PE)",
+                control: "Отсутствие провисания",
+                image: "https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=1000&q=80",
+                paragraphs: [
+                    "Потолочное положение — высший экзамен координации. Секрет удержания жидкой стали на потолке кроется в физике поверхностного натяжения и газодинамическом давлении короткой дуги.",
+                    "Уприте козырек обмазки электрода непосредственно в зазор. При длине дуги менее 1,5 мм реактивный поток ионизированных газов буквально вколачивает мелкие капли расплавленного электрода вверх, не позволяя им сорваться вниз."
+                ],
+                secret: "Если раскаленная капля стали температурой 1600°C случайно падает Евгению за воротник спецовки, он не прерывает проход — капля мгновенно замерзает от его хладнокровия.",
+                quiz: {
+                    q: "Что удерживает жидкий металл в сварочной ванне при потолочной сварке?",
+                    options: [
+                        "Сверхкороткая дуга и поверхностное натяжение ванны",
+                        "Магнитное поле Земли",
+                        "Длинная дуга 10–15 мм"
+                    ],
+                    correct: 0
+                }
+            },
+            {
+                id: 8,
+                title: "Урок 8. Сварка прогнившего глушителя и металла толщиной с фольгу",
+                shortTitle: "Тонколистовой металл с отрывом",
+                params: "Ток: 35–45А | Прямая полярность",
+                electrode: "ОК 46.00 (Ø 1.6 / 2.0 мм)",
+                position: "Сварка с отрывом",
+                control: "Пневмоиспытание",
+                image: "https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1000&q=80",
+                paragraphs: [
+                    "Сварка кузовного железа толщиной 0,6–0,8 мм, тронутого коррозией, требует ювелирного дозирования тепловложения. Переключите клеммы инвертора на прямую полярность (минус на электрододержателе, плюс на массе).",
+                    "Применяйте технику импульсного стаккато: зажгли дугу, поставили точку за 0,3 секунды, оторвали электрод, дождались перехода цвета пятна в темно-вишневый и перекрыли точку следующей на 50% диаметра."
+                ],
+                secret: "На спор с главным технологом завода Евгений Шатров заварил алюминиевую банку из-под лимонада чугунным электродом Ø 5.0 мм на токе 260 Ампер, просто двигая кистью со сверхзвуковой скоростью.",
+                quiz: {
+                    q: "Какая полярность и техника применяются для сварки тонкого металла 0.8 мм?",
+                    options: [
+                        "Прямая полярность (минус на держаке) и сварка короткими прихватками с отрывом",
+                        "Максимальный ток 300 Ампер без отрыва",
+                        "Резак с пропаном"
+                    ],
+                    correct: 0
+                }
+            },
+            {
+                id: 9,
+                title: "Урок 9. TIG-сварка в среде аргона: Высшая хирургия сплавов",
+                shortTitle: "TIG-сварка (WIG) аргоном",
+                params: "Аргон 99.998% | Расход: 8 л/мин",
+                electrode: "Вольфрам WL-20 (Ø 2.4 мм)",
+                position: "Орбитальное / Ручное",
+                control: "Цвет побежалости (Золото)",
+                image: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1000&q=80",
+                paragraphs: [
+                    "Аргонодуговая сварка неплавящимся вольфрамовым электродом (TIG) не терпит суеты и грязи. Кромки нержавеющей стали или титана обезжириваются ацетоном до зеркальной чистоты, а вольфрамовый электрод затачивается строго вдоль своей оси.",
+                    "Подача присадочного прутка осуществляется пальцами левой руки ритмичными шагами прямо в передний край сварочной ванны, не выводя раскаленный кончик прутка из зоны газовой линзы сопла."
+                ],
+                secret: "Евгений затачивает вольфрамовый электрод ногтем большого пальца до остроты микрохирургического скальпеля, а если в баллоне кончается аргон — просто задерживает дыхание.",
+                quiz: {
+                    q: "Как правильно затачивать вольфрамовый электрод для TIG-сварки?",
+                    options: [
+                        "Поперек стержня, чтобы дуга бегала по кругу",
+                        "Строго вдоль оси электрода (продольная риска)",
+                        "Вольфрам вообще не затачивают, а сплющивают молотком"
+                    ],
+                    correct: 1
+                }
+            },
+            {
+                id: 10,
+                title: "Урок 10. Сварка неповоротного стыка трубы высокого давления под рентген",
+                shortTitle: "Неповоротная труба под рентген",
+                params: "Зазор: 2.5 мм | Притупление: 2.0 мм",
+                electrode: "LB-52U (Корень + Облицовка)",
+                position: "Под углом 45° (H-L045)",
+                control: "Рентген + УЗК 100%",
+                image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=80",
+                paragraphs: [
+                    "Неповоротная катушка под углом 45 градусов (положение H-L045) объединяет в себе все виды пространственных положений: от потолка на 6 часах до нижнего положения на 12 часах.",
+                    "Ключевой этап — формирование корневого валика с равномерным внутренним усилением 1,5–2,0 мм. Во время прохода корня вы должны слышать характерный звук «шипения масла на сковороде», означающий, что дуга горит внутри трубы через замочную скважину (keyhole)."
+                ],
+                secret: "Когда лаборатория неразрушающего контроля просвечивает рентгеном стык трубы, заваренный Шатровым, пленка показывает полное отсутствие шва — металл срастается как цельнотянутая труба.",
+                quiz: {
+                    q: "О чем говорит ровный звук «шипения масла» при проходе корня трубы?",
+                    options: [
+                        "О том, что дуга горит внутри зазора и формирует идеальный обратный валик",
+                        "О том, что в трубе забыли воду",
+                        "О перегреве сварочного инвертора"
+                    ],
+                    correct: 0
+                }
+            },
+            {
+                id: 11,
+                title: "Урок 11. Полуавтоматическая сварка (MIG/MAG): Настройка 140А и 18.5В",
+                shortTitle: "Полуавтомат MIG/MAG (140А / 18.5В)",
+                params: "Ток: 140А | Напряжение: 18.5В",
+                electrode: "Св-08Г2С (Ø 0.8 / 1.0 мм)",
+                position: "Смесь Ar 82% + CO₂ 18%",
+                control: "Индуктивность + Звук шмеля",
+                image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=80",
+                paragraphs: [
+                    "На кастомном полуавтомате Евгения Шатрова всегда выставлена золотая пара параметров: скорость подачи проволоки, соответствующая 140 Амперам, и напряжение дуги ровно 18.5 Вольт.",
+                    "При идеальном согласовании подачи и напряжения крупнокапельный перенос сменяется плотным жужжанием («звук роя пчел»), брызги полностью исчезают, а валик ложится плотно и монолитно."
+                ],
+                secret: "Евгений настраивает соотношение подачи проволоки и напряжения с закрытыми глазами по вибрации бетонного пола в радиусе 50 метров от сварочного поста.",
+                quiz: {
+                    q: "Какое эталонное сочетание параметров светится на именном полуавтомате Евгения Шатрова?",
+                    options: ["50 А и 99 В", "140 Ампер и 18.5 Вольт", "12 А и 220 В"],
+                    correct: 1
+                }
+            },
+            {
+                id: 12,
+                title: "Урок 12. Сварка чугуна, титана и разнородных материалов",
+                shortTitle: "Сварка чугуна без трещин",
+                params: "Проковка валика | Медно-никель",
+                electrode: "ЦЧ-4 / МНЧ-2 (Ø 3.0 мм)",
+                position: "Холодная сварка участками",
+                control: "Цветная дефектоскопия",
+                image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1000&q=80",
+                paragraphs: [
+                    "Серый чугун коварен: при резком остывании в зоне термического влияния образуется хрупкий отбеленный чугун (цементит), который лопается со звонким щелчком.",
+                    "По методу холодной сварки Шатрова шов накладывается короткими участками по 20–25 мм с немедленной легкой проковкой каждого валика круглым бойком молотка для снятия усадочных напряжений."
+                ],
+                secret: "Чтобы чугунный блок цилиндров не треснул при остывании, Евгений просто строго запрещает ему трескаться вслух перед началом работы.",
+                quiz: {
+                    q: "Зачем проковывать молоточком горячий валик сразу после наложения на чугунную деталь?",
+                    options: [
+                        "Чтобы снять внутренние растягивающие напряжения и предотвратить трещины",
+                        "Чтобы сбить серийный номер детали",
+                        "Для проверки прочности тисков"
+                    ],
+                    correct: 0
+                }
+            },
+            {
+                id: 13,
+                title: "Урок 13. Акустический отбив шлака и зеркальная эстетика шва",
+                shortTitle: "Самоотделение шлаковой корки",
+                params: "Скорость ведения: Константа",
+                electrode: "ОК 46.00 / УОНИ-13/55",
+                position: "Контрольный шов",
+                control: "Аттестация НАКС",
+                image: "https://images.unsplash.com/photo-1572981779307-38b8cabb2407?auto=format&fit=crop&w=1000&q=80",
+                paragraphs: [
+                    "Как понять, что сварочный ток, длина дуги и скорость перемещения электрода были выбраны безупречно? Вам не понадобится молоточек-шлакоотделитель.",
+                    "При эталонном режиме сварки по мере остывания металла шлаковая корка за счет разницы коэффициентов температурного расширения сама приподнимается цельной полосой («хвостиком скорпиона») и сходит от легкого дуновения."
+                ],
+                secret: "В мастерской Евгения Шатрова нет ни одной зачистной болгарки. Болгарка нужна тем, кто прячет поры и наплывы; швы Шатрова сразу после отбива шлака готовы к выставке в Лувре.",
+                quiz: {
+                    q: "Что происходит со шлаковой коркой после идеального прохода шва?",
+                    options: [
+                        "Её приходится срубать зубилом два часа",
+                        "Она сама приподнимается «хвостиком» при остывании и отлетает целиком",
+                        "Она плавится обратно в сталь"
+                    ],
+                    correct: 1
+                }
+            },
+            {
+                id: 14,
+                title: "Урок 14. Высший пилотаж: Подводная и геотектоническая сварка",
+                shortTitle: "Финал: Подводная сварка и 14 разряд",
+                params: "Давление: 400 атм | УОНИ-Термояд",
+                electrode: "Спецэлектрод Шатрова №14",
+                position: "Глубоководное / Орбитальное",
+                control: "Личное клеймо Мастера",
+                image: "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1000&q=80",
+                paragraphs: [
+                    "Вы дошли до финального 14-го урока открытого курса. Подводная сварка выполняется в парогазовом пузыре, который мгновенно образуется вокруг дуги при сгорании водостойкого фторполимерного покрытия электрода.",
+                    "Именно эту технологию Евгений Шатров защитил в своем историческом докладе у глобуса в темно-синем костюме, доказав возможность герметичной проварки обшивки атомных ледоколов и континентальных разломов."
+                ],
+                secret: "Запомните главную заповедь Евгения Шатрова: «Всё, что треснуло — проварим с корнем. Всё, что держится на честном слове — усилим косынкой из десятки».",
+                quiz: {
+                    q: "В какой среде горит сварочная дуга при подводной сварке по методу Шатрова?",
+                    options: [
+                        "В стабильном парогазовом пузыре, создаваемом покрытием электрода",
+                        "Прямо в холодной воде без газа",
+                        "Под водой варят только паяльником"
+                    ],
+                    correct: 0
+                }
+            }
+        ];
+
+        let currentLessonIndex = 0;
+        let completedLessons = new Set([1]);
+
+        function renderLessonSidebar() {
+            const container = document.getElementById('lessonListContainer');
+            container.innerHTML = lessonsData.map((lesson, idx) => {
+                const isActive = idx === currentLessonIndex;
+                const isDone = completedLessons.has(lesson.id);
+                return `
+                    <button type="button" onclick="selectLesson(${idx})" class="w-full text-left px-3 py-2.5 rounded-xl transition-all flex items-center justify-between gap-2 cursor-pointer ${
+                        isActive 
+                        ? 'bg-weld-500 text-white font-bold shadow-md' 
+                        : 'bg-dark-950/60 hover:bg-dark-800 text-slate-300 border border-white/5'
+                    }">
+                        <div class="flex items-center gap-2.5 min-w-0">
+                            <span class="w-6 h-6 rounded-lg text-xs font-mono flex items-center justify-center shrink-0 ${
+                                isActive ? 'bg-dark-950/30 text-white' : (isDone ? 'bg-emerald-500/20 text-emerald-400' : 'bg-dark-800 text-weld-400')
+                            }">
+                                ${isDone ? '✓' : lesson.id}
+                            </span>
+                            <span class="text-xs sm:text-sm truncate">${lesson.shortTitle}</span>
+                        </div>
+                    </button>
+                `;
+            }).join('');
+        }
+
+        function updateActiveLessonView() {
+            const lesson = lessonsData[currentLessonIndex];
+            document.getElementById('activeLessonImg').src = lesson.image;
+            document.getElementById('activeLessonBadge').textContent = `Урок №${lesson.id} из ${lessonsData.length}`;
+            document.getElementById('activeLessonParams').textContent = lesson.params;
+            document.getElementById('activeLessonTitle').textContent = lesson.title;
+            
+            document.getElementById('activeLessonText').innerHTML = lesson.paragraphs
+                .map(p => `<p>${p}</p>`)
+                .join('');
+            
+            document.getElementById('activeLessonElectrode').textContent = lesson.electrode;
+            document.getElementById('activeLessonPosition').textContent = lesson.position;
+            document.getElementById('activeLessonControl').textContent = lesson.control;
+            document.getElementById('activeLessonSecret').textContent = `«${lesson.secret}»`;
+
+            // Done button state
+            const doneBtn = document.getElementById('markLessonDoneBtn');
+            if (completedLessons.has(lesson.id)) {
+                doneBtn.textContent = '✓ Урок пройден';
+                doneBtn.className = 'px-3 py-1 rounded-lg bg-emerald-600/80 border border-emerald-400 text-xs font-bold text-white cursor-pointer';
+            } else {
+                doneBtn.textContent = 'Отметить пройденным';
+                doneBtn.className = 'px-3 py-1 rounded-lg bg-dark-950/90 hover:bg-weld-500/30 border border-white/20 text-xs font-semibold text-slate-200 cursor-pointer';
+            }
+
+            // Render Lesson Mini-Quiz
+            document.getElementById('lessonQuizQuestion').textContent = lesson.quiz.q;
+            document.getElementById('lessonQuizStatus').textContent = 'Выберите правильный ответ';
+            const fb = document.getElementById('lessonQuizFeedback');
+            fb.classList.add('hidden');
+
+            document.getElementById('lessonQuizOptions').innerHTML = lesson.quiz.options.map((opt, oIdx) => `
+                <button type="button" onclick="answerLessonQuiz(${oIdx})" id="lessonOpt-${oIdx}" class="text-left px-3.5 py-2.5 rounded-lg bg-dark-900 hover:bg-dark-800 border border-white/10 text-xs sm:text-sm text-slate-200 transition-colors cursor-pointer">
+                    ${oIdx + 1}. ${opt}
+                </button>
+            `).join('');
+
+            // Progress bar & status
+            const doneCount = completedLessons.size;
+            const progressPercent = Math.round((doneCount / lessonsData.length) * 100);
+            document.getElementById('courseProgressBar').style.width = `${progressPercent}%`;
+            document.getElementById('courseProgressText').textContent = `Изучено: ${doneCount} из ${lessonsData.length} (${progressPercent}%)`;
+            document.getElementById('lessonFooterStatus').textContent = `Модуль ${lesson.id} / ${lessonsData.length}`;
+
+            document.getElementById('prevLessonBtn').disabled = currentLessonIndex === 0;
+            const nextBtn = document.getElementById('nextLessonBtn');
+            if (currentLessonIndex === lessonsData.length - 1) {
+                nextBtn.innerHTML = `<span>В начало курса</span>`;
+            } else {
+                nextBtn.innerHTML = `<span>Следующий урок</span><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>`;
+            }
+
+            renderLessonSidebar();
+        }
+
+        function answerLessonQuiz(selectedIdx) {
+            const lesson = lessonsData[currentLessonIndex];
+            const fb = document.getElementById('lessonQuizFeedback');
+            fb.classList.remove('hidden');
+
+            lesson.quiz.options.forEach((_, idx) => {
+                const btn = document.getElementById(`lessonOpt-${idx}`);
+                if (idx === lesson.quiz.correct) {
+                    btn.className = "text-left px-3.5 py-2.5 rounded-lg bg-emerald-500/20 border border-emerald-500 text-xs sm:text-sm text-emerald-200 font-bold";
+                } else if (idx === selectedIdx) {
+                    btn.className = "text-left px-3.5 py-2.5 rounded-lg bg-red-500/20 border border-red-500 text-xs sm:text-sm text-red-200";
+                }
+            });
+
+            if (selectedIdx === lesson.quiz.correct) {
+                completedLessons.add(lesson.id);
+                fb.textContent = "✓ Абсолютно верно! Евгений Шатров засчитал вам этот модуль.";
+                fb.className = "text-xs pt-1 font-bold text-emerald-400";
+                renderLessonSidebar();
+                const doneCount = completedLessons.size;
+                const progressPercent = Math.round((doneCount / lessonsData.length) * 100);
+                document.getElementById('courseProgressBar').style.width = `${progressPercent}%`;
+                document.getElementById('courseProgressText').textContent = `Изучено: ${doneCount} из ${lessonsData.length} (${progressPercent}%)`;
+            } else {
+                fb.textContent = "✕ Ошибка! Перечитайте Секрет Шатрова выше, чтобы не допустить непровара.";
+                fb.className = "text-xs pt-1 font-bold text-amber-400";
+            }
+        }
+
+        function toggleCurrentLessonCompleted() {
+            const id = lessonsData[currentLessonIndex].id;
+            if (completedLessons.has(id)) completedLessons.delete(id);
+            else completedLessons.add(id);
+            updateActiveLessonView();
+        }
+
+        function markAllLessonsDone() {
+            lessonsData.forEach(l => completedLessons.add(l.id));
+            updateActiveLessonView();
+        }
+
+        function selectLesson(index) {
+            currentLessonIndex = index;
+            updateActiveLessonView();
+        }
+
+        function changeLesson(direction) {
+            completedLessons.add(lessonsData[currentLessonIndex].id);
+            if (direction === 1 && currentLessonIndex === lessonsData.length - 1) {
+                currentLessonIndex = 0;
+            } else {
+                currentLessonIndex = Math.max(0, Math.min(lessonsData.length - 1, currentLessonIndex + direction));
+            }
+            updateActiveLessonView();
+        }
+
+        // --- 4. WELDING CALCULATOR ---
+        let lastCalculatedAmp = 140;
+
+        function runWeldCalculator() {
+            const s = parseFloat(document.getElementById('calcThickness').value);
+            const len = parseFloat(document.getElementById('calcLength').value);
+            const kJoint = parseFloat(document.getElementById('calcJointType').value);
+            const grade = document.getElementById('calcMetalGrade').value;
+
+            document.getElementById('calcThicknessLabel').textContent = `${s} мм`;
+            document.getElementById('calcLengthLabel').textContent = `${len} м`;
+
+            let d = 3.0;
+            if (s <= 2) d = 2.0;
+            else if (s <= 4) d = 3.0;
+            else if (s <= 12) d = 4.0;
+            else d = 5.0;
+
+            let amp = Math.round((32 * d + s * 2.5) * kJoint);
+            if (grade === 'titanium') amp = 140; // Sacred constant of Shatrov
+            amp = Math.max(30, Math.min(350, amp));
+            lastCalculatedAmp = amp;
+
+            const weightKg = ((s * 0.085 * len * kJoint)).toFixed(1);
+            const normalMinutes = Math.round(len * (s * 2.8));
+            const hrs = Math.floor(normalMinutes / 60);
+            const mins = normalMinutes % 60;
+            const shatrovSec = (len * 1.15).toFixed(1);
+
+            document.getElementById('calcResDiameter').textContent = `Ø ${d.toFixed(1)} мм`;
+            document.getElementById('calcResCurrent').textContent = `${amp} А`;
+            document.getElementById('calcResPacks').textContent = `${weightKg} кг`;
+            document.getElementById('calcTimeNormal').textContent = hrs > 0 ? `${hrs} ч ${mins} мин` : `${mins} мин`;
+            document.getElementById('calcTimeShatrov').textContent = `${shatrovSec} сек (без маски)`;
+        }
+
+        function applyCalcToSimulator() {
+            document.getElementById('simAmpRange').value = lastCalculatedAmp;
+            updateSimControls();
+            scrollToSection('simulator');
+        }
+
+        // --- 5. COURSE DETAILS MODAL ---
+        const courseDetailsMap = {
+            basic: {
+                badge: "Старт в профессии • 4 недели",
+                title: "Базовый курс сварки",
+                desc: "Фундаментальная программа для тех, кто впервые берет в руки электрододержатель. Постановка руки по методу «Железный краб», уверенный поджиг дуги и сварка во всех пространственных положениях.",
+                duration: "4 недели",
+                lessons: "24 урока",
+                rank: "4–5 разряд",
+                price: "9 990 ₽",
+                syllabus: [
+                    "Неделя 1: Физика сварочной дуги, выбор полярности и чтение маркировки электродов (МР-3, ОК 46.00, УОНИ-13/55).",
+                    "Неделя 2: Отделение жидкого металла от шлаковой корки в реальном времени.",
+                    "Неделя 3: Сварка угловых, тавровых и стыковых соединений без подрезов и пор.",
+                    "Неделя 4: Зачетная работа — герметичная заварка трубы под гидравлическое испытание 50 атм."
+                ]
+            },
+            full: {
+                badge: "Хит продаж • 8 недель",
+                title: "Полный курс сварщика (MMA + MIG/MAG + TIG)",
+                desc: "Самая востребованная программа Академии Евгения Шатрова. Вы освоите ручную дуговую сварку, полуавтомат на легендарном режиме 140А / 18.5В и аргонодуговую сварку нержавейки и цветных металлов.",
+                duration: "8 недель",
+                lessons: "48 уроков",
+                rank: "6–9 разряд",
+                price: "19 990 ₽",
+                syllabus: [
+                    "Модуль 1 (MMA): Вертикальные и потолочные швы электродами с основным покрытием.",
+                    "Модуль 2 (MIG/MAG): Настройка полуавтомата по звуку дуги, кузовной ремонт и толстостенный прокат.",
+                    "Модуль 3 (TIG): Сварка неплавящимся вольфрамовым электродом алюминия, титана и нержавеющей стали с формированием «Золотой чешуи».",
+                    "Модуль 4: Авторский спецкурс Евгения Шатрова по холодной сварке чугунных блоков."
+                ]
+            },
+            pro: {
+                badge: "Высшая лига индустрии • 12 недель",
+                title: "Профессиональный уровень (Под рентген и НАКС)",
+                desc: "Подготовка элитных сварщиков для магистральных нефтегазопроводов, атомного судостроения и объектов космической инфраструктуры.",
+                duration: "12 недель",
+                lessons: "72 урока",
+                rank: "До 12-го разряда",
+                price: "29 990 ₽",
+                syllabus: [
+                    "Блок 1: Сварка неповоротных стыков труб под углом 45 градусов (H-L045) с обратным формированием корня.",
+                    "Блок 2: Подготовка к прохождению 100% ультразвукового (УЗК) и рентгенографического контроля.",
+                    "Блок 3: Технология подводной сварки и герметизации трещин под давлением 400 атмосфер.",
+                    "Блок 4: Личная аттестация у Евгения Шатрова с занесением в золотой реестр."
+                ]
+            },
+            vip: {
+                badge: "Эксклюзивное наставничество • Пожизненно",
+                title: "Тариф «Абсолютный Монолит VIP»",
+                desc: "Евгений Шатров лично прилетает в ваш город или гараж, настраивает ваше оборудование взглядом и передает закрытые техники 14-го разряда.",
+                duration: "Индивидуально",
+                lessons: "Безлимитно",
+                rank: "14-й разряд ЮНЕСКО",
+                price: "1 500 000 ₽",
+                syllabus: [
+                    "Личный выезд Евгения Шатрова и калибровка вашего сварочного аппарата на вечные 140А / 18.5В.",
+                    "Секретная практика «Сварка чугуна с березовым поленом и кварцевым стеклом».",
+                    "Передача техники высекания сварочной дуги трением двух стальных ломов при отключенном электричестве.",
+                    "Вручение именного заговоренного держателя электродов с автографом Мастера."
+                ]
+            }
+        };
+
+        function openCourseModal(key) {
+            const data = courseDetailsMap[key] || courseDetailsMap.full;
+            document.getElementById('modalCourseBadge').textContent = data.badge;
+            document.getElementById('modalCourseTitle').textContent = data.title;
+            document.getElementById('modalCourseDesc').textContent = data.desc;
+            document.getElementById('modalCourseDuration').textContent = data.duration;
+            document.getElementById('modalCourseLessons').textContent = data.lessons;
+            document.getElementById('modalCourseRank').textContent = data.rank;
+            document.getElementById('modalCoursePrice').textContent = data.price;
+
+            document.getElementById('modalCourseSyllabus').innerHTML = data.syllabus.map(item => `
+                <li class="flex items-start gap-2.5 p-2.5 rounded-lg bg-dark-950/60 border border-white/5">
+                    <span class="text-weld-500 font-bold">✓</span>
+                    <span>${item}</span>
+                </li>
+            `).join('');
+
+            document.getElementById('courseModalBackdrop').classList.remove('hidden');
+        }
+
+        function closeCourseModal() {
+            document.getElementById('courseModalBackdrop').classList.add('hidden');
+        }
+
+        // --- 6. EXAM & CERTIFICATE CANVAS GENERATOR ---
+        const examQuestions = [
+            {
+                q: "1. Какие эталонные параметры горят на цифровом табло личного аппарата Евгения Шатрова?",
+                opts: ["140 Ампер и 18.5 Вольт", "50 Ампер и 12 Вольт", "380 Ампер и 220 Вольт"],
+                ans: 0
+            },
+            {
+                q: "2. Чем Евгений Шатров высекал сварочную дугу, когда на заводе на 3 суток отключили свет?",
+                opts: ["Пальчиковой батарейкой АА", "Трением двух стальных ломов друг о друга", "Зажигалкой"],
+                ans: 1
+            },
+            {
+                q: "3. Какую тему Евгений Шатров защитил у глобуса в темно-синем костюме?",
+                opts: ["Геотектоническая сварка литосферных плит и Марианской впадины", "Покраска заборов валиком", "Пайка оловом"],
+                ans: 0
+            },
+            {
+                q: "4. Какой максимальный разряд в мире присвоен лично Евгению Шатрову?",
+                opts: ["3-й юношеский", "6-й стандартный", "14-й внештатный разряд ЮНЕСКО"],
+                ans: 2
+            }
+        ];
+
+        let examAnswers = [0, 1, 0, 2];
+
+        function renderExamQuestions() {
+            const container = document.getElementById('examQuestionsContainer');
+            container.innerHTML = examQuestions.map((item, qIdx) => `
+                <div class="space-y-2">
+                    <div class="text-xs sm:text-sm font-bold text-white">${item.q}</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                        ${item.opts.map((opt, oIdx) => `
+                            <button type="button" onclick="selectExamAnswer(${qIdx}, ${oIdx})" id="examBtn-${qIdx}-${oIdx}" class="px-3 py-2 rounded-lg text-xs text-left border transition-all cursor-pointer ${
+                                examAnswers[qIdx] === oIdx
+                                ? 'bg-weld-500/20 border-weld-500 text-white font-bold'
+                                : 'bg-dark-950 border-white/10 text-slate-300 hover:bg-white/5'
+                            }">
+                                ${opt}
+                            </button>
+                        `).join('')}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function selectExamAnswer(qIdx, oIdx) {
+            examAnswers[qIdx] = oIdx;
+            renderExamQuestions();
+            generateCertificate();
+        }
+
+        function generateCertificate() {
+            const canvas = document.getElementById('certificateCanvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            const name = (document.getElementById('certStudentName').value || 'Ученик Академии Шатрова').trim();
+
+            let correctCount = 0;
+            examQuestions.forEach((q, idx) => {
+                if (examAnswers[idx] === q.ans) correctCount++;
+            });
+
+            const rankAssigned = 6 + correctCount * 2; // from 6th up to 14th rank!
+            document.getElementById('certScoreLabel').textContent = `Присвоен: ${rankAssigned}-й разряд (${correctCount}/4 верно)`;
+
+            // Background metallic dark gradient
+            const bgGrad = ctx.createLinearGradient(0, 0, 900, 620);
+            bgGrad.addColorStop(0, '#0B0E14');
+            bgGrad.addColorStop(0.5, '#151C28');
+            bgGrad.addColorStop(1, '#090C10');
+            ctx.fillStyle = bgGrad;
+            ctx.fillRect(0, 0, 900, 620);
+
+            // Double industrial orange/gold border
+            ctx.strokeStyle = '#FF7A00';
+            ctx.lineWidth = 6;
+            ctx.strokeRect(24, 24, 852, 572);
+
+            ctx.strokeStyle = 'rgba(255, 152, 56, 0.35)';
+            ctx.lineWidth = 2;
+            ctx.strokeRect(36, 36, 828, 548);
+
+            // Header Title
+            ctx.fillStyle = '#FF7A00';
+            ctx.font = 'bold 16px Inter, sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('МЕЖДУНАРОДНАЯ АКАДЕМИЯ ТИТАНОВОГО ШВА • ЛИЦЕНЗИЯ НАКС №001-ШАТРОВ', 450, 88);
+
+            ctx.fillStyle = '#FFFFFF';
+            ctx.font = '900 42px Montserrat, sans-serif';
+            ctx.fillText('СЕРТИФИКАТ МАСТЕРА СВАРКИ', 450, 145);
+
+            ctx.fillStyle = '#94A3B8';
+            ctx.font = '16px Inter, sans-serif';
+            ctx.fillText('Настоящим удостоверяется, что аттестацию по методу молекулярного сплавления прошёл(ла):', 450, 195);
+
+            // Student Name
+            ctx.fillStyle = '#FF9838';
+            ctx.font = 'bold 34px Montserrat, sans-serif';
+            ctx.fillText(name.toUpperCase(), 450, 255);
+
+            ctx.strokeStyle = 'rgba(255,255,255,0.15)';
+            ctx.lineWidth = 1.5;
+            ctx.beginPath();
+            ctx.moveTo(180, 272);
+            ctx.lineTo(720, 272);
+            ctx.stroke();
+
+            // Qualification Rank Box
+            ctx.fillStyle = 'rgba(255, 122, 0, 0.12)';
+            ctx.fillRect(150, 300, 600, 95);
+            ctx.strokeStyle = '#FF7A00';
+            ctx.strokeRect(150, 300, 600, 95);
+
+            ctx.fillStyle = '#FFFFFF';
+            ctx.font = 'bold 24px Montserrat, sans-serif';
+            ctx.fillText(`ПРИСВОЕНА КВАЛИФИКАЦИЯ: СВАРЩИК ${rankAssigned}-ГО РАЗРЯДА`, 450, 342);
+
+            ctx.fillStyle = '#CBD5E1';
+            ctx.font = '14px Inter, sans-serif';
+            ctx.fillText('С правом сварки труб под рентген, чугуна со стеклом и обшивки атомных ледоколов (140А / 18.5В)', 450, 374);
+
+            // Seal & Signatures
+            ctx.textAlign = 'left';
+            ctx.fillStyle = '#94A3B8';
+            ctx.font = '14px Inter, sans-serif';
+            ctx.fillText('Главный сварщик планеты (14 разряд):', 80, 495);
+            ctx.fillStyle = '#FFFFFF';
+            ctx.font = 'bold 20px Montserrat, sans-serif';
+            ctx.fillText('Евгений Шатров', 80, 525);
+
+            // Signature flourish
+            ctx.strokeStyle = '#FF7A00';
+            ctx.lineWidth = 2.5;
+            ctx.beginPath();
+            ctx.moveTo(275, 525);
+            ctx.bezierCurveTo(300, 480, 340, 540, 385, 500);
+            ctx.stroke();
+
+            // Round Stamp
+            ctx.save();
+            ctx.translate(710, 500);
+            ctx.strokeStyle = '#FF7A00';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.arc(0, 0, 58, 0, Math.PI * 2);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(0, 0, 48, 0, Math.PI * 2);
+            ctx.stroke();
+            ctx.fillStyle = '#FF7A00';
+            ctx.textAlign = 'center';
+            ctx.font = 'bold 11px Inter, sans-serif';
+            ctx.fillText('ОДОБРЕНО', 0, -14);
+            ctx.font = '900 14px Montserrat, sans-serif';
+            ctx.fillText('ШАТРОВ-9000', 0, 5);
+            ctx.font = '10px monospace';
+            ctx.fillText('400 АТМ • ГЕРМЕТИЧНО', 0, 22);
+            ctx.restore();
+        }
+
+        function downloadCertificatePNG() {
+            const canvas = document.getElementById('certificateCanvas');
+            const link = document.createElement('a');
+            link.download = 'Shatrov_Welding_Certificate.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+
+        // --- 7. REVIEWS SLIDER ---
+        const reviewsData = [
+            {
+                name: "Игорь М.",
+                role: "Сварщик МК",
+                avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+                text: "«Отличный курс! Евгений объясняет простым языком, много практики. За 2 месяца вышел на хороший уровень и уже работаю по специальности.»"
+            },
+            {
+                name: "Геннадий Петрович В.",
+                role: "Сварщик 6-го разряда (стаж 42 года)",
+                avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+                text: "«Всю жизнь думал, что умею варить трубы, пока не увидел, как Евгений заварил чугунный люк к деревянному забору без единой поры. Снял маску и пошел учиться к нему с нуля.»"
+            },
+            {
+                name: "Д-р Генрих Шталь",
+                role: "Инженер вакуумных колец ЦЕРН",
+                avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
+                text: "«Когда на Большом адронном коллайдере разошелся титановый шов, наши лазеры оказались бессильны. Евгений прилетел в темно-синем костюме и заварил его одним электродом УОНИ-13/55.»"
+            },
+            {
+                name: "Артем К.",
+                role: "Выпускник полного курса",
+                avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80",
+                text: "«После урока №3 по методу Железного краба рука перестала дрожать вообще. Вчера сдал неповоротную катушку под рентген с первого раза, дефектоскопист прослезился от красоты чешуи.»"
+            },
+            {
+                name: "Кузьмич (Цех №4)",
+                role: "Бригадир судоремонтного завода",
+                avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80",
+                text: "«Выставил на нашем полуавтомате 140 Ампер и 18.5 Вольт по заветам Евгения. Аппарат перестал плеваться, проволока шепчет, а шлак сам прыгает в совок!»"
+            }
+        ];
+
+        let currentReviewIndex = 0;
+
+        function changeReview(dir) {
+            currentReviewIndex = (currentReviewIndex + dir + reviewsData.length) % reviewsData.length;
+            const r = reviewsData[currentReviewIndex];
+            document.getElementById('reviewName').textContent = r.name;
+            document.getElementById('reviewRole').textContent = r.role;
+            document.getElementById('reviewAvatar').src = r.avatar;
+            document.getElementById('reviewText').textContent = r.text;
+            document.getElementById('reviewCounterText').textContent = `Отзыв ${currentReviewIndex + 1} из ${reviewsData.length}`;
+
+            const dotsContainer = document.getElementById('reviewDots');
+            dotsContainer.innerHTML = reviewsData.map((_, i) => 
+                `<button type="button" onclick="selectReview(${i})" class="cursor-pointer h-2.5 rounded-full transition-all ${i === currentReviewIndex ? 'bg-weld-500 w-6' : 'bg-white/20 w-2.5 hover:bg-white/40'}" aria-label="Отзыв ${i+1}"></button>`
+            ).join('');
+        }
+
+        function selectReview(index) {
+            currentReviewIndex = index;
+            changeReview(0);
+        }
+
+        // --- 8. CHECKOUT WIDGET INTERACTION (WITH DEAD-END PAYMENT BUTTON) ---
+        let promoDiscountActive = false;
+
+        function updateCheckoutPrice() {
+            const base = parseInt(document.getElementById('checkoutTariffSelect').value, 10);
+            const finalSum = promoDiscountActive ? Math.round(base * 0.85) : base;
+            document.getElementById('checkoutTotalSum').textContent = finalSum.toLocaleString('ru-RU') + ' ₽';
+        }
+
+        function applyPromoCode() {
+            const code = (document.getElementById('checkoutPromoInput').value || '').trim().toUpperCase();
+            const fb = document.getElementById('promoFeedbackText');
+            if (code === 'УОНИ140' || code === 'ШАТРОВ' || code === '140') {
+                promoDiscountActive = true;
+                fb.textContent = '✓ Промокод Шатрова (-15%) активирован:';
+                fb.className = 'text-emerald-400 font-bold';
+            } else {
+                promoDiscountActive = false;
+                fb.textContent = 'Код не найден (попробуйте УОНИ140):';
+                fb.className = 'text-amber-400';
+            }
+            updateCheckoutPrice();
+        }
+
+        function selectPayBadge(btn) {
+            document.querySelectorAll('.pay-badge').forEach(el => {
+                el.classList.remove('border-weld-500', 'bg-weld-500/20');
+                el.classList.add('border-white/15', 'bg-white/5');
+            });
+            btn.classList.remove('border-white/15', 'bg-white/5');
+            btn.classList.add('border-weld-500', 'bg-weld-500/20');
+        }
+
+        // --- 9. CUSTOM PHOTO UPLOADER ---
+        function previewCustomImage(event, targetImgId, removeCropClass) {
+            const file = event.target.files && event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const imgEl = document.getElementById(targetImgId);
+                if (removeCropClass) {
+                    imgEl.classList.remove('crop-hero-portrait', 'crop-about-portrait');
+                    imgEl.classList.add('object-cover', 'object-top');
+                }
+                imgEl.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        // --- 10. HERO BACKGROUND SPARKS ---
+        function initWeldingSparks() {
+            const canvas = document.getElementById('sparksCanvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            let width, height;
+            const sparks = [];
+
+            function resize() {
+                width = canvas.width = canvas.offsetWidth;
+                height = canvas.height = canvas.offsetHeight;
+            }
+            window.addEventListener('resize', resize);
+            resize();
+
+            function createSpark() {
+                const originX = width * 0.82 + (Math.random() - 0.5) * 140;
+                const originY = height * 0.68 + (Math.random() - 0.5) * 80;
+                const angle = -Math.PI * 0.25 - Math.random() * Math.PI * 0.65;
+                const speed = 1.5 + Math.random() * 4.5;
+                return {
+                    x: originX,
+                    y: originY,
+                    vx: Math.cos(angle) * speed,
+                    vy: Math.sin(angle) * speed,
+                    size: 1.2 + Math.random() * 2.2,
+                    alpha: 0.7 + Math.random() * 0.3,
+                    decay: 0.006 + Math.random() * 0.012,
+                    color: Math.random() > 0.35 ? '#FF9838' : '#FFF3C4'
+                };
+            }
+
+            for (let i = 0; i < 48; i++) sparks.push(createSpark());
+
+            function animate() {
+                ctx.clearRect(0, 0, width, height);
+                for (let i = 0; i < sparks.length; i++) {
+                    const s = sparks[i];
+                    s.x += s.vx;
+                    s.y += s.vy;
+                    s.vy += 0.05;
+                    s.alpha -= s.decay;
+                    if (s.alpha <= 0 || s.y > height || s.x < 0) {
+                        sparks[i] = createSpark();
+                        continue;
+                    }
+                    ctx.save();
+                    ctx.globalAlpha = s.alpha;
+                    ctx.fillStyle = s.color;
+                    ctx.shadowColor = '#FF7A00';
+                    ctx.shadowBlur = 8;
+                    ctx.beginPath();
+                    ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.restore();
+                }
+                requestAnimationFrame(animate);
+            }
+            animate();
+        }
+
+        window.onload = function() {
+            updateActiveLessonView();
+            initWeldingSparks();
+            initSimulatorCanvas();
+            runWeldCalculator();
+            renderExamQuestions();
+            generateCertificate();
+            changeReview(0);
+        };
+    </script>
+</body>
+</html>
